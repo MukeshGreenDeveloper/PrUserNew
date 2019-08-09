@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.DrawerScreen.Dialog.ProcessDocumentUpload.ProcessDocUploadDialogViewModel" />
+    </data>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="@dimen/_250sdp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start"
+                android:inputType="text"
+                android:enabled="false"
+                android:text="@={viewModel.title_doc}"
+                android:background="@android:color/transparent"
+                app:Editfont="@{`Padauk.ttf`}" />
+            <ImageView
+                android:id="@+id/img_pic_docupload"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_img_docupload"
+                app:imageUrlDocument="@{viewModel.bitmap_url}" />
+
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:gravity="center_vertical|start"
+                android:hint="@{viewModel.translationModel.text_doc_identic_num}"
+                android:inputType="text"
+                android:visibility="@{viewModel.number_Available?View.VISIBLE:View.GONE}"
+                android:text="@={viewModel.number_doc}"
+                app:Editfont="@{`Padauk.ttf`}" />
+<!--
+                android:hint="@string/text_document_number"-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="@{viewModel.exp_Available?View.VISIBLE:View.GONE}"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/edit_expiry_docupload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:hint="@{viewModel.translationModel.text_expiry_date}"
+                    android:inputType="number"
+                    android:paddingLeft="8dp"
+                    android:text="@={viewModel.exp_doc}"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    app:textfont="@{`Padauk.ttf`}" /><!--
+                    android:hint="@string/text_expiry_date"-->
+
+                <ImageView
+                    android:id="@+id/img_expiry_docupload"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_alignParentRight="true"
+                    android:padding="2dp"
+                    android:onClick="@{(v)->viewModel.onClickDatePicker(v)}"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ic_small_calendar"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@{viewModel.translationModel.text_attach}"
+                app:textfont="@{`Padauk.ttf`}" /><!--
+                android:text="@string/text_attach"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_camera_docUpload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="@{viewModel.onClickCamera}"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:srcCompat="@drawable/ic_camera" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@{viewModel.translationModel.text_camera}"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        app:textfont="@{`Padauk.ttf`}" />
+                    <!--
+                        android:text="@string/text_camera"-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_galary_docUpload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="@{viewModel.onClickGalary}"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:srcCompat="@drawable/ic_galary_library" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@{viewModel.translationModel.text_galary}"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        app:textfont="@{`Padauk.ttf`}" /><!--
+                        android:text="@string/text_galary"-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit_docupload"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_12sdp"
+                android:background="@drawable/curved_border_background"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:onClick="@{viewModel.onClickSubmit}"
+                android:text="@{viewModel.translationModel.text_submit}"
+                android:textAllCaps="false"
+                android:textColor="@color/buttonTextColor"
+                app:Buttonfont="@{`Padauk.ttf`}" />
+            <!--
+                android:text="@string/text_submit"-->
+        </LinearLayout>
+    </LinearLayout>
+    <include
+        layout="@layout/progress_dialog"
+        android:visibility="@{viewModel.mIsLoading ? View.VISIBLE : View.GONE}" />
+</RelativeLayout>
+</layout>

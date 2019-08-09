@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.support.v4.app.Fragment" />
+
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.MultipleShareRide.MultipleShareRideViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_gray_light"
+        android:keepScreenOn="true"
+        android:orientation="vertical">
+
+
+        <!--<include-->
+        <!--android:id="@+id/layout_actionbar"-->
+        <!--layout="@layout/toolbar" />-->
+        <!--
+                    android:layout_below="@+id/layout_actionbar"-->
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:text="Passengers"
+            android:onClick="@{viewModel::passengersOnClick}"
+            android:textColor="@color/clr_black"
+            app:Buttonfont="@{`Padauk.ttf`}" />
+
+
+    </RelativeLayout>
+</layout>

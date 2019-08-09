@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModelss"
+            type="bz.pei.driver.ui.DrawerScreen.Dialog.CancelDialog.CancelDialogViewModel" />
+    </data>
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/while_dark"
+            app:cardCornerRadius="@dimen/_2sdp"
+            app:cardElevation="@dimen/_2sdp"
+            app:contentPadding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:gravity="start|left"
+                    android:text="@={viewModelss.translationModel.txt_cancelRide}"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/clr_black"
+                    app:textfont="@{`Padauk.ttf`}" /><!--
+                    android:text="@string/text_cancel_trip"-->
+
+                <Spinner
+                    android:id="@+id/spin_cancel_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:spinArray="@{viewModelss.arrayCancelReason}" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="start"
+                    android:hint="@{viewModelss.translationModel.hint_add_reason_for_cancel}"
+                    android:lines="3"
+                    android:maxLength="100"
+                    android:text="@={viewModelss.cancelReasonObserval}"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="@{viewModelss.cancelReasonOthers?View.VISIBLE:View.GONE}"
+                    app:Editfont="@{`Padauk.ttf`}" /><!--
+                    android:hint="@string/hint_add_reason_for_cancel"-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingRight="@dimen/_12sdp">
+
+                    <TextView
+                        android:id="@+id/btn_confirm_canceltrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:onClick="@{viewModelss::cancelConfirm}"
+                        android:padding="8dp"
+                        android:text="@={viewModelss.translationModel.text_confirm}"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/clr_black"
+                        app:textfont="@{`Padauk.ttf`}" />
+<!--
+                        android:text="@string/text_confirm"-->
+                    <TextView
+                        android:id="@+id/btn_cancel_canceltrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:elevation="4dp"
+                        android:onClick="@{(v) -> viewModelss.canceldialog(v)}"
+                        android:padding="8dp"
+                        android:text="@={viewModelss.translationModel.text_cancel}"
+                        android:textAllCaps="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/clr_black"
+                        app:textfont="@{`Padauk.ttf`}" /><!--
+                        android:text="@string/text_cancel"-->
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    <!--</LinearLayout>-->
+</layout>

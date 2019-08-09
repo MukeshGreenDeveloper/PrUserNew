@@ -1,0 +1,188 @@
+<layout>
+
+    <data>
+        <import type="android.view.View"/>
+       <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.Setting.SettingsViewModel" />
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/while_dark"
+        android:clickable="true"
+        tools:context="bz.pei.driver.ui.DrawerScreen.Fragmentz.Setting.SettingFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="16dp"
+                android:gravity="start|left"
+                android:text="@{viewModel.translationModel.text_general}"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/clr_black" />
+<!--
+                android:text="@string/text_general"-->
+            <LinearLayout
+                android:id="@+id/rl_notifi_chg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:orientation="horizontal">
+
+                <!--<ImageView-->
+                <!--android:layout_width="@dimen/_18sdp"-->
+                <!--android:layout_height="@dimen/_18sdp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--app:srcCompat="@drawable/ic_bell"-->
+                <!--tools:ignore="VectorDrawableCompat" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:gravity="start|left"
+                    android:text="@{viewModel.translationModel.txt_notification_sound}"
+                    android:textSize="@dimen/_14sdp" />
+<!--
+                    android:text="@string/txt_notification_sound"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:gravity="start|left"
+                    android:text="@{viewModel.mIsNotifySoundOn}"
+                    android:textSize="@dimen/_14sdp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_sound_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:onCheckedChanged="@{viewModel.checkedChangeListener}"
+                    android:checked="@{viewModel.isSoundEnabled}" />
+                <!--            <ImageView
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_bell"
+                    tools:ignore="VectorDrawableCompat" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_shareRide_chg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:gravity="start|left"
+                    android:text="@{viewModel.translationModel.txt_shareride}"
+                    android:textSize="@dimen/_14sdp" />
+                <!--  txt_shareride}
+                                    android:text="@string/txt_notification_sound"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:gravity="start|left"
+                    android:text="@{viewModel.mIsShareSoundOn}"
+                    android:textSize="@dimen/_14sdp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_share_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:onClick="@{viewModel.checkedShareListener}"
+                    android:checked="@{viewModel.isShareEnabled}" />
+                <!--            <ImageView
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_bell"
+                    tools:ignore="VectorDrawableCompat" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:gravity="start|center_vertical"
+                android:onClick="@{viewModel::showAlertDialog}"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|start"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="@{viewModel.translationModel.txt_Lang}"
+                    android:textSize="@dimen/_14sdp" />
+<!--
+                    android:text="@string/txt_Lang"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:gravity="start|left"
+                    android:text="@{viewModel.txt_Language_update}"
+                    android:textSize="@dimen/_14sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_gravity="end|center_vertical"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    app:srcCompat="@drawable/ic_language"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="@dimen/_4sdp"
+            android:gravity="center_vertical"
+            android:text="@{viewModel.txtBuildDetail}"
+            android:textAppearance="?android:textAppearanceSmall"/>
+        <include
+            layout="@layout/progress_dialog"
+            android:visibility="@{viewModel.mIsLoading ? View.VISIBLE : View.GONE}" />
+    </FrameLayout>
+</layout>

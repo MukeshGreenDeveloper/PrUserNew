@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "582651823821",
+    "firebase_url": "https://newpei.firebaseio.com",
+    "project_id": "newpei",
+    "storage_bucket": "newpei.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582651823821:android:cccfa28e16100ec4",
+        "android_client_info": {
+          "package_name": "bz.pei.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582651823821-m74o502r66j8nv8dek5ihc2t833sd11l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bz.pei.driver",
+            "certificate_hash": "f1be633a28c2fc57dec8b119dfb6d952c0228fc1"
+          }
+        },
+        {
+          "client_id": "582651823821-fvq8f5jh257jli3bl3snuhmkce5divuo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bz.pei.driver",
+            "certificate_hash": "854309913e8ec0ef8d630c38876b6ccf6b615765"
+          }
+        },
+        {
+          "client_id": "582651823821-qkni7m582n5af9vmq9e8ln8bhudlstjm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHYELwGcRWFknEdeAfBu6-DPjL-UdPCNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582651823821-qkni7m582n5af9vmq9e8ln8bhudlstjm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name">PEI Taxi Driver  </string>
+    <string name="app_title">PEI Taxi Driver </string>
+    <!--<string name="text_English">English</string>-->
+    <!--<string name="text_Spanish">Spanish</string>-->
+    <!--<string name="Map_key">AIzaSyAZsHSDzebiNmYzPuBl0c8xeHhgeb0YFSk</string>-->
+    <!--<string name="default_notification_channel_id">1029589359310</string>-->
+    <string name="text_enter_social">ou Digite as mídias sociais</string>
+
+    <string name="text_sign_up">Registrarse</string>
+    <string name="hint_email_id">Identificação do email</string>
+    <string name="hint_phone_number">Número de telefone</string>
+    <string name="text_title_registration">Cadastro</string>
+    <string name="text_log_in">Entrar</string>
+    <string name="text_send">Enviar</string>
+    <string name="txt_NoInternet">Verifique a conexão com a Internet</string>
+    <string name="text_vehicle_info">Informação do veículo</string>
+    <string name="hint_vehicle_number">Placa do veículo</string>
+    <string name="hint_vehicle_model">Modelo do veículo</string>
+    <string name="text_next">Próximo</string>
+    <string name="text_desc_doc_upload">Recomendamos que você digitalize os documentos e anexe-os aqui como JPEG, JPG ou PNG eo Tamanho deve ser inferior a 500 KB</string>
+    <string name="text_documents">Documentos</string>
+
+
+    <string name="text_area">Area</string>
+    <string name="text_waiting">Waiting ..</string>
+
+
+    <string name="Alert_title_Permission">Permissão</string>
+    <string name="Alert_Msg_Location">Localização e Estado do telefone são permissão obrigatória, permitam acessar. Você tem certeza que quer continuar ?</string>
+    <string name="Txt_Continue">Continuar</string>
+    <string name="Txt_Exit">Saída</string>
+    <string name="text_submit">Enviar</string>
+    <string name="text_driving_license">Carteira de motorista</string>
+    <string name="text_rc_book">carteira de motorista CNH</string>
+    <string name="text_insurance">Seguro</string>
+    <string name="text_expiry_date">Data de validade</string><!--Data de validade DD-MM-AAAA-->
+    <string name="text_camera">Camera</string>
+    <string name="text_galary">Galeria</string>
+    <string name="text_title_select_file">Selecione o arquivo</string>
+    <string name="text_error_doc_pic_empty">Doc Image deixada em branco!</string>
+    <string name="text_error_doc_title_empty">Doc Titulo deixou vazio!</string>
+    <string name="text_error_doc_expiry_empty">Doc termo deixada vazia!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_error_contact_server">Erro em contato com o servidor !!</string>
+    <string name="text_attach">Anexar</string>
+    <string name="text_thanks_for_register">Obrigado por se registrar no Taxipara!</string>
+
+
+    <string name="Validate_Email">O email não deveria estar vazio</string>
+    <string name="Validate_Password">A senha não deve estar vazia</string>
+    <string name="Validate_PasswordLength">A senha não deve ser inferior a 8 letras</string>
+    <string name="hint_emailorPhone">Número de telefone celular / ID de e-mail</string>
+    <string name="text_title_Login">Entrar</string>
+    <string name="DeviceNotSupport">Este dispositivo não é suportado.</string>
+    <string name="Txt_Forgot">Esqueceu a senha</string>
+    <string name="Validate_Mob_Number">Digite o número do celular</string>
+    <string name="text_pass_sent_email">Sua nova senha foi enviada por SMS ...</string>
+    <string name="Txt_VerifyMblNumber">Verifique seu número de celular </string>
+    <string name="text_enter_phonenumber">Digite o número de telefone</string>
+    <string name="txt_NoInternet_title">Sem internet</string>
+
+    <string name="text_firstname">Perfil</string>
+    <string name="text_lastname">Primeiro nome</string>
+    <string name="text_title_password">Senha</string>
+    <string name="txt_update">Atualizar</string>
+    <string name="txt_phone">Phone</string>
+    <string name="text_general">Geral</string>
+    <string name="txt_notification_sound">Som de notificação /</string>
+    <string name="txt_on">ON</string>
+    <string name="txt_OFF">OFF</string>
+    <!--<string name="txt_notification">Notification Sound  /  ON</string>-->
+    <string name="txt_Lang">linguagem</string>
+    <string name="txt_Home">Casa</string>
+    <string name="text_profile">Perfil</string>
+    <string name="txt_Setting">Configurações</string>
+    <string name="txt_logout">Sair</string>
+    <string name="text_edit">EDITAR</string>
+    <string name="text_basic_settings">Configurações básicas</string>
+    <string name="text_change_password">Mudar senha</string>
+    <string name="text_new">NOVO</string>
+    <string name="text_confirm">CONFIRME</string>
+    <string name="text_contact_settings">Configurações de contato</string>
+    <string name="text_email_plain">EMAIL</string>
+    <string name="text_offline">Desconectado</string>
+    <string name="text_online">Conectado</string>
+    <string name="text_complaint">Queixa</string>
+    <string name="text_error_comments">Os comentários não podem ser deixados em branco!</string>
+    <string name="text_error_title_complaint">Seleção de título é obrigatório</string>
+    <string name="text_soscontent">Você clicou no botão SOS. Escolha quem você deseja chamar de emergência</string>
+    <string name="txt_sos">SOS</string>
+    <string name="text_go_online_to_get_rides">Ficar online para receber passageiros</string>
+    <string name="text_share">Compartilhar</string>
+
+    <string name="text_share_content">https://play.google.com/store/apps/details?id=</string>
+
+
+    <string name="text_document_number">nombre del documento</string>
+    <string name="text_accept">ACEITAR</string>
+    <string name="text_reject">REJEITAR</string>
+    <string name="error_vehicle_number">O número de registro do veículo não pode estar vazio!</string>
+    <string name="error_vehicle_model">O modelo do veículo não pode estar vazio!</string>
+    <string name="error_vehicle_type">Selecione Tipo de veículo!</string>
+    <string name="text_sos">SOS</string>
+
+    <string name="text_history">História</string>
+    <string name="text_waiting_for_approval">Esperando aprovação</string>
+    <string name="text_cancel">cancelar</string>
+    <string name="text_distance">Distância</string>
+    <string name="text_time">Tempo</string>
+    <string name="text_start_trip">INICIAR VIAGEM</string>
+    <string name="text_end_trip">FINAL DA VIAGEM </string>
+    <string name="text_wait">Esperar</string>
+    <string name="text_payment">Forma de pagamento</string>
+    <string name="text_call">Ligar</string>
+    <string name="text_arrived">Chegou</string>
+    <string name="txt_cash">DINHEIRO</string>
+    <string name="txt_card">CARTÃO</string>
+    <string name="text_navigation">Navegação</string>
+    <string name="text_mylocation">Minha localização</string>
+
+    <string name="text_cannot_cancel_trip_right_now">Não pode cancelar a sua viagem agora mesmo!</string>
+    <string name="hint_add_reason_for_cancel">Adicionar motivo para cancelar</string>
+    <string name="text_feedback">Comentários</string>
+    <string name="hint_your_comments">Os teus comentários</string>
+    <string name="text_base_price">Preço base</string>
+    <string name="text_distance_cost">Custo de distância</string>
+    <string name="text_time_cost">Custo de tempo</string>
+    <string name="waiting_time_price">Preço Esperando</string>
+    <string name="text_referral_bonus">Bônus de referência</string>
+    <string name="text_promo_bonus">Bônus de Promoção</string>
+    <string name="txt_Total">Total</string>
+    <string name="text_invoice">Fatura</string>
+    <string name="text_currency">\u0024</string>
+    <string name="txt_min">Min</string>
+    <string name="text_km">Km</string>
+    <string name="text_new_request">New Request</string>
+    <string name="text_error_empty_reason">Motivo necessário para o cancelamento da viagem!</string>
+    <string name="text_approved">Aprovado</string>
+    <string name="text_declined">Recusado</string>
+    <string name="text_wallet">CARTEIRA</string>
+    <string name="text_cancel_trip">Cancelar viagem</string>
+    <string name="text_vehicle_type">Tipo de vehiculo</string>
+
+    <string name="text_enable_location">Vaya al servicio de localizacion</string>
+    <string name="text_setvice_tax">Servicio Tax</string>
+    <string name="text_confirm_exit">Esta seguri que quiere salir?</string>
+    <string name="text_enable_location_content">To continue, let your device turn on location, which uses Google\'s location service</string>
+    <string name="text_enable_internet">Internet no disponible</string>
+    <string name="text_wallet_deduction">Wallet Deduction</string>
+    <string name="text_choose">Escoger</string>
+    <string name="text_select_language">Seleccionar Languange</string>
+    <string name="text_error_doc_expiry_notvalid">Doc Fecha de caducidad no válida</string>
+    <string-array name="array_cancel_reason">
+        <item>ALMUERZO</item>
+        <item>Personal Emergencia</item>
+        <item>REPARAR</item>
+        <item>Natural Desastre</item>
+        <item>Otro (describe below)</item>
+    </string-array>
+    <string name="txt_fileNotfound">File Not Found</string>
+    <string name="txt_fileSizeTooLarge">Tamaño de archivo demasiado grande</string>
+    <string name="text_desc_logout">¿Estás seguro de cerrar la sesión?</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <string name="text_driver">Driver</string>
+    <!--<string name="text_Arabic">Arabic</string>-->
+    <string name="text_pickup_location">Lugar de recogida</string>
+    <string name="text_drop_location">Lugar de colocación</string>
+    <string name="text_rating_left_empty">Rating user left empty!</string>
+    <string name="comments_left_empty">Comments cannot be left empty!</string>
+    <string name="text_first_name_empty">First Name cannot be Empty!</string>
+    <string name="text_error_lastname">Last Name cannot be Empty!</string>
+    <string name="text_error_email">Email cannot be Empty!</string>
+    <string name="text_error_email_valid">not a valid email!</string>
+    <string name="text_error_password">Password cannot be Empty!</string>
+    <string name="text_error_password_limit">Password MIN 8 and MAX 15 characters!</string>
+      <string name="text_error_pass_empty">Phonenumber cannot be Empty!</string>
+    <string name="text_error_area_empty">Area not available try after some time!</string>
+    <string name="text_choose_area">Choose an area!</string>
+    <string name="text_erro_newPas_empty">New Password cannot be Empty!</string>
+    <string name="text_error_pass_char">Password minimum 8 characters!</string>
+    <string name="text_error_confirm_empyt">Confirm Password cannot be Empty!</string>
+    <string name="Validate_notmatch"><![CDATA[Confirm Password & New Password doesnot match!]]></string>
+
+</resources>
+

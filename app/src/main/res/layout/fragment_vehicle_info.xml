@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.SignupScreen.Fragmentz.VehicleInfoViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Ui.SignpuVehilceInfo.SignupVehicleInfoActivity">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarFadeDuration="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:id="@+id/img_background_otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:background="@color/clr_gray_trans"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_half_background" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_80sdp"
+                        android:background="@drawable/circle_primary"
+                        android:src="@drawable/car_info" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+
+                    android:paddingTop="@dimen/_15sdp">
+
+                    <TextView
+                        android:id="@+id/txt_title_regst_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="@{viewModel.translationModel.text_vehicle_info}"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_22sdp"
+                        app:textfont="@{`Laksaman.ttf`}" />
+<!--
+                        android:text="@string/text_vehicle_info"-->
+                    <RelativeLayout
+                        android:id="@+id/layout_vehicle_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_title_regst_signup"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:gravity="center_vertical">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/pager_vehicle_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_110sdp"
+                            android:onPageChangeListener="@{viewModel}">
+
+                        </android.support.v4.view.ViewPager>
+                        <!--<include layout="@layout/item_vehicletype" />-->
+
+                        <ImageView
+                            android:id="@+id/img_vehicle_left_vehicleinfo"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:onClick="@{viewModel::onClickPagerLeft}"
+                            android:padding="@dimen/_8sdp"
+                            android:visibility="@{viewModel.arrow_leftVisibility?View.VISIBLE:View.INVISIBLE}"
+                            app:srcCompat="@drawable/ic_left_arrow" />
+
+                        <ImageView
+                            android:id="@+id/img_vehicle_right_vehicleinfo"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:onClick="@{viewModel::onClickPagerRight}"
+                            android:padding="@dimen/_8sdp"
+                            android:visibility="@{viewModel.right_leftVisibility?View.VISIBLE:View.INVISIBLE}"
+                            app:srcCompat="@drawable/ic_right_arrow" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_fname_lanme_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_vehicle_signup"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edit_vehicleno_register"
+                            style="@style/EditTextTheme"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@{viewModel.translationModel.hint_vehicle_number}"
+                            android:inputType="text"
+                            android:text="@={viewModel.edit_vehiclenumber_register}"
+                            app:Editfont="@{`Padauk.ttf`}" />
+<!--
+                            android:hint="@string/hint_vehicle_number"-->
+                        <android.support.v4.widget.Space
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent" />
+
+                        <EditText
+                            android:id="@+id/edit_vehiclemodel_register"
+                            style="@style/EditTextTheme"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@{viewModel.translationModel.hint_vehicle_model}"
+                            android:inputType="text"
+                            android:text="@={viewModel.edit_vehiclemodel_register}"
+                            app:Editfont="@{`Padauk.ttf`}" />
+                        <!--
+                            android:hint="@string/hint_vehicle_model"-->
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_fname_lanme_signups"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_fname_lanme_signup"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edit_car_manufacture_register"
+                            style="@style/EditTextTheme"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@{viewModel.translationModel.hint_vehicle_manufacturer}"
+                            android:inputType="text"
+                            android:text="@={viewModel.edit_car_manufacturer_register}"
+                            app:Editfont="@{`Padauk.ttf`}" />
+<!--
+                            android:hint="@string/hint_vehicle_number"-->
+                        <android.support.v4.widget.Space
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent" />
+
+                        <EditText
+                            android:id="@+id/edit_car_year_register"
+                            style="@style/EditTextTheme"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@{viewModel.translationModel.hint_vehicle_year}"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:text="@={viewModel.edit_car_year_register}"
+                            app:Editfont="@{`Padauk.ttf`}" />
+                        <!--
+                            android:hint="@string/hint_vehicle_model"-->
+                    </LinearLayout>
+
+
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_below="@+id/layout_fname_lanme_signup"
+                         android:layout_marginTop="@dimen/_18sdp"
+
+                         android:gravity="bottom|center_horizontal">
+
+                         <Button
+                             android:layout_width="wrap_content"
+                             android:layout_height="@dimen/_25sdp"
+                             android:layout_marginTop="@dimen/_18sdp"
+                             android:background="@drawable/curved_border_background"
+                             android:onClick='@{viewModel.onClickNext}'
+                             android:paddingLeft="@dimen/_40sdp"
+                             android:paddingRight="@dimen/_40sdp"
+                             android:text="@string/text_next"
+                             android:textAllCaps="false"
+                             android:textColor="@color/while_dark"
+                             app:Buttonfont="@{`Padauk.ttf`}" />
+                     </LinearLayout>-->
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <!--</LinearLayout>-->
+
+        <include
+            android:id="@+id/progressBar"
+            layout="@layout/progress_dialog"
+            android:visibility="@{viewModel.mIsLoading ? View.VISIBLE : View.GONE}" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,111 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.support.v4.app.Fragment" />
+
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.MapFragmentViewModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="bz.pei.driver.ui.DrawerScreen.Fragmentz.MapFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/splash_bg"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:visibility="@{viewModel.availableDriver?View.GONE:View.VISIBLE}"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        app:srcCompat="@drawable/ic_offline"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:text="@{viewModel.translationModel.text_go_online_to_get_rides}"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        app:textfont="@{`Padauk.ttf`}" /><!--
+                        android:text="@string/text_go_online_to_get_rides"-->
+
+                </LinearLayout>
+
+
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView"
+                    android:name="com.tapngo.driver.ui.DrawerScreen.Fragmentz.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="@{viewModel.availableDriver?View.VISIBLE:View.GONE}"
+                    app:initMap="@{viewModel.mMapLatLng}" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="@dimen/_4sdp"
+                    android:visibility="@{viewModel.driverisShare?View.VISIBLE:View.GONE}"
+                    android:textColor="@color/buttonTextColor"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:text="@{viewModel.translationModel.note_driver_share}"
+                    app:textfont="@{`Padauk.ttf`}"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/_55sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:background="@drawable/circle_white"
+                    android:onClick="@{viewModel::focusCurrentLocation}"
+                    android:padding="8dp"
+                    android:visibility="@{viewModel.availableDriver?View.VISIBLE:View.GONE}"
+                    app:srcCompat="@drawable/ic_currentloc" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:background="@color/clr_white"
+                android:onClick="@{viewModel::changeShareOnOff}"
+                android:text="@={viewModel.stsShareRide}"
+                android:textColor="@color/while_dark"
+                app:Buttonfont="@{`Padauk.ttf`}" />
+
+
+            <!--android:text="@{viewModel.availableUnavailable?@string/text_offline:@string/text_online}"-->
+            <!--android:text="@{true? @string/text_offline : @string/text_online}"-->
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/progressBar"
+            layout="@layout/progress_dialog"
+            android:visibility="@{viewModel.mIsLoading ? View.VISIBLE : View.GONE}" />
+    </RelativeLayout>
+
+</layout>

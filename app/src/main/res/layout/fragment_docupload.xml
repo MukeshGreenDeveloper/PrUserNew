@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+
+            name="viewModel"
+            type="bz.pei.driver.ui.SignupScreen.Fragmentz.DocUploadViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarFadeDuration="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:id="@+id/img_background_otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:scaleType="fitXY"
+                        android:background="@color/clr_gray_trans"
+                        android:src="@drawable/ic_half_background" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_80sdp"
+                        android:background="@drawable/circle_primary"
+                        android:src="@drawable/doc_info" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txt_title_regst_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="@{viewModel.translationModel.text_documents}"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_22sdp"
+                        app:textfont="@{`Laksaman.ttf`}" />
+<!--
+                        android:text="@string/text_documents"-->
+                    <TextView
+                        android:id="@+id/txt_desc_doc_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_title_regst_signup"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:gravity="start"
+                        android:text="@{viewModel.translationModel.text_desc_doc_upload}"
+                        app:textfont="@{`Padauk.ttf`}" />
+<!--
+                        android:text="@string/text_desc_doc_upload"-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_desc_doc_signup"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="bottom|center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_licence_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/curved_border_gray_background"
+                            android:onClick="@{viewModel::onClickDocUpload}"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="start"
+                                android:text="@{viewModel.translationModel.text_driving_license}"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                app:textfont="@{`Padauk.ttf`}" />
+<!--
+                                android:text="@string/text_driving_license"-->
+                            <ImageView
+                                android:id="@+id/img_license_docuipload"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="end"
+                                android:onClick="@{viewModel::onClickDocUpload}"
+                                android:src="@{viewModel.is_licenceOK?@drawable/ic_tick :@drawable/ic_plus}" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_insurance_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/curved_border_gray_background"
+                            android:onClick="@{viewModel::onClickDocUpload}"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="start"
+                                android:text="@{viewModel.translationModel.text_insurance}"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                app:textfont="@{`Padauk.ttf`}" />
+<!--
+                                android:text="@string/text_insurance"-->
+                            <ImageView
+                                android:id="@+id/img_insurance_docupload"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="end"
+                                android:onClick="@{viewModel::onClickDocUpload}"
+                                android:src="@{viewModel.is_insuranceOK?@drawable/ic_tick :@drawable/ic_plus}" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_rcbook_signup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/curved_border_gray_background"
+                            android:onClick="@{viewModel::onClickDocUpload}"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="start"
+                                android:text="@{viewModel.translationModel.text_rc_book}"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                app:textfont="@{`Padauk.ttf`}" />
+<!--
+                                android:text="@string/text_rc_book"-->
+                            <ImageView
+                                android:id="@+id/img_rcbook_docupload"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="end"
+                                android:onClick="@{viewModel::onClickDocUpload}"
+                                android:src="@{viewModel.is_rcbookOK?@drawable/ic_tick :@drawable/ic_plus}" />
+
+                        </RelativeLayout>
+
+                        <!--<Button-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="@dimen/_35sdp"-->
+                        <!--android:layout_margin="@dimen/_18sdp"-->
+                        <!--android:background="@drawable/curved_border_background"-->
+                        <!--android:paddingLeft="@dimen/_40sdp"-->
+                        <!--android:paddingRight="@dimen/_40sdp"-->
+                        <!--android:text="@string/text_submit"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:textColor="@color/while_dark"-->
+                        <!--app:Buttonfont="@{`Padauk.ttf`}" />-->
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            layout="@layout/progress_dialog"
+            android:visibility="@{viewModel.mIsLoading ? View.VISIBLE : View.GONE}" />
+    </RelativeLayout>
+</layout>

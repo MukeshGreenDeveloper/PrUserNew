@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.Sos.SOSViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/while_dark"
+        android:clickable="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/img_background_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/ic_half_background" />
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:src="@drawable/ic_doc" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="16dp">
+
+
+
+                <TextView
+                    android:id="@+id/txt_title_sos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:gravity="start"
+                    android:text="@{viewModel.translationModel.text_sos}"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_22sdp"
+                    app:textfont="@{`Laksaman.ttf`}" />
+<!--
+                android:text="@string/text_sos"-->
+                <TextView
+                    android:id="@+id/txt_desc_doc_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_title_sos"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:gravity="start"
+                    android:text="@{viewModel.translationModel.text_soscontent}"
+                    app:textfont="@{`Padauk.ttf`}" />
+<!--
+                    android:text="@string/text_soscontent"-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_sos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:setAdapter="@{viewModel.listSOS}" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--android:onClick="@{viewModel::reportComplaint}"-->
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

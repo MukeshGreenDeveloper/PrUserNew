@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.DrawerScreen.Adapter.AddChrargeAdapViewModel" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_8sdp"
+            android:text="@{viewModel.name}"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/clr_black"
+            app:textfont="@{`Laksaman.ttf`}" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:text="@{viewModel.amount}"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/clr_black"
+            app:textfont="@{`Laksaman.ttf`}" />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:padding="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_height="wrap_content"
+            android:onClick="@{viewModel::onDeleteClick}"
+            app:srcCompat="@drawable/ic_trash" />
+    </LinearLayout>
+</layout>

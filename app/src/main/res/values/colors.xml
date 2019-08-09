@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F3E3A</color>
+    <color name="clr_primarylite">#445454</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#040707</color>
+    <color name="colorAccentLite">#505656</color>
+    <color name="btn_bg_dark">#384957</color>
+    <color name="btn_bg_light">#7b7b7b</color>
+    <color name="colorPrimaryAlternate">#FFFF3939</color>
+    <color name="colorPrimaryAlternate_light">#ff6d6d</color>
+    <color name="colorPrimaryDark_click">#4F94D0</color>
+    <color name="colorPrimary_click">#445454</color>
+    <color name="textc">#FFFF3939</color>
+    <color name="clr_gray">#384957</color>
+    <color name="buttonTextColor">#ffffff</color>
+
+    <color name="while_dark">#ffffff</color>
+    <color name="while_light">#f1efef</color>
+    <color name="clr_black_t">#a8000000</color>
+    <color name="clr_black_light">#2e2e2e</color>
+    <color name="clr_black">#000000</color>
+    <color name="clr_white">#ffffff</color>
+    <color name="clr_gray_trans">#b0dedede</color>
+    <color name="clr_gray_light">#fbdedede</color>
+    <color name="clr_gray_light2">#807d7d</color>
+    <color name="clr_divider">#91eceded</color>
+    <color name="clr_pickup_drop_bg">#2A3139</color>
+    <color name="clr_pickup_circle">#4DCAA8</color>
+    <color name="clr_pickup_drop">#d1818b</color>
+    <color name="colorInitial">#FFC107</color>
+    <color name="color_red">#e93838</color>
+    <color name="color_green">#17c200</color>
+    <color name="color_app_gray">#999999</color>
+    <color name="txt_clr">#FFFF3939</color>
+    <color name="clr_green">#17A049</color>
+    <!--Feedback-->
+
+
+    <color name="bg_clr_orange">#89fab3</color>
+    <color name="bg_clr_orange_dark">#5d5e5e</color>
+    <color name="clr_orange_drk">#040707</color>
+    <color name="bg_clr_bill_orange">#989f9f</color>
+    <!--<color name="bg_clr_orange">#ffcaab</color>-->
+    <!--<color name="clr_orange_drk">#c26128</color>-->
+    <!--<color name="bg_clr_bill_orange">#ffe7d9</color>-->
+    <color name="clr_line">#d9cac7c7</color>
+    <color name="clr_divider_history">#57b9b6b6</color>
+    <color name="color_bg_gray">#E8E8E8</color>
+
+</resources>

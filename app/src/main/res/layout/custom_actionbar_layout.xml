@@ -1,0 +1,48 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">-->
+
+        <android.support.design.widget.AppBarLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.AppBarOverlay"
+                app:titleTextAppearance="@style/Toolbar.TitleText">
+
+                <LinearLayout
+                    android:id="@+id/layout_toggle_status_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right|end"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="right">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:checked="true"
+                        android:text="@string/text_online"
+                        android:textColor="@color/clr_black"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:theme="@style/SwitchCompatTheme"
+                        android:id="@+id/switch_toggle_satus_drawrer"
+                        android:layout_width="wrap_content"
+                        app:textfont="@{`Padauk.ttf`}"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+    <!--</LinearLayout>-->
+</layout>

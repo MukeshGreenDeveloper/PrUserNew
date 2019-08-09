@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:timer="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModels"
+            type="bz.pei.driver.ui.AcceptReject.AcceptRejectActivityViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/while_dark"
+            android:orientation="vertical">
+
+            <!--@dimen/_180sdp-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="45dp">
+
+                    <bz.pei.driver.utilz.lineartimer.LinearTimerView
+                        android:id="@+id/time_layout_accept_reject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        app:timeLeftActivity="@{viewModels.timeLeft.get()}"
+                        timer:initialColor="@color/colorPrimary"
+                        timer:progressColor="@color/colorInitial"
+                        timer:radius="20dp"
+                        timer:startingPoint="270"
+                        timer:strokeWidth="2dp" />
+
+                    <TextView
+                        android:id="@+id/timer_tick_accept_reject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@{viewModels.CurrentTimeTicking}"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        app:textfont="@{`Padauk.ttf`}" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_username_accept_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@{viewModels.userName}"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                app:textfont="@{`Padauk.ttf`}" />
+
+            <RatingBar
+                android:id="@+id/ratting_user_accept_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/custom_rating"
+                android:rating="@{viewModels.userRating}" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    app:cardBackgroundColor="@color/clr_pickup_drop_bg"
+                    app:cardCornerRadius="6dp">
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:padding="6dp"
+                                android:src="@drawable/circle_pickup_shape" />
+
+                            <ImageView
+                                android:layout_width="4dp"
+                                android:layout_height="4dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/circle_dot_shaoe" />
+
+                            <ImageView
+                                android:layout_width="4dp"
+                                android:layout_height="4dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="4dp"
+                                android:src="@drawable/circle_dot_shaoe" />
+
+                            <ImageView
+                                android:layout_width="4dp"
+                                android:layout_height="4dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="4dp"
+                                android:src="@drawable/circle_dot_shaoe" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:padding="6dp"
+                                android:src="@drawable/circle_drop_shape" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txt_pickup_accept_reject"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:text="@{viewModels.pickupAddr}"
+                                    android:textColor="@color/while_dark"
+                                    android:textSize="@dimen/_12sdp"
+                                    app:textfont="@{`Padauk.ttf`}" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp">
+
+
+                                <TextView
+                                    android:id="@+id/txt_drop_accept_reject"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:text="@{viewModels.dropAddr}"
+                                    android:textColor="@color/while_dark"
+                                    android:textSize="@dimen/_12sdp"
+                                    app:textfont="@{`Padauk.ttf`}" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_18sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--   <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_marginLeft="@dimen/_8sdp"
+                               android:gravity="center_vertical"
+                               android:visibility="gone"
+                               android:orientation="vertical">
+
+                               <ImageView
+                                   android:layout_width="@dimen/_20sdp"
+                                   android:layout_height="@dimen/_20sdp"
+                                   android:padding="6dp"
+                                   android:src="@drawable/circle_pickup_shape" />
+
+                               <ImageView
+                                   android:layout_width="4dp"
+                                   android:layout_height="4dp"
+                                   android:layout_gravity="center_horizontal"
+                                   android:src="@drawable/circle_dot_shaoe" />
+
+                               <ImageView
+                                   android:layout_width="4dp"
+                                   android:layout_height="4dp"
+                                   android:layout_gravity="center_horizontal"
+                                   android:layout_marginTop="4dp"
+                                   android:src="@drawable/circle_dot_shaoe" />
+
+                               <ImageView
+                                   android:layout_width="4dp"
+                                   android:layout_height="4dp"
+                                   android:layout_gravity="center_horizontal"
+                                   android:layout_marginTop="4dp"
+                                   android:src="@drawable/circle_dot_shaoe" />
+
+                               <ImageView
+                                   android:layout_width="@dimen/_20sdp"
+                                   android:layout_height="@dimen/_20sdp"
+                                   android:padding="6dp"
+                                   android:src="@drawable/circle_drop_shape" />
+
+                           </LinearLayout>-->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:padding="6dp"
+                                    android:src="@drawable/circle_pickup_shape" />
+
+                                <TextView
+                                    android:id="@+id/txt_pickup_accept_reject"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:text="@{viewModels.pickupAddr}"
+                                    android:textColor="@color/while_dark"
+                                    android:textSize="@dimen/_12sdp"
+                                    app:textfont="@{`Padauk.ttf`}" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:layout_width="4dp"
+                                    android:layout_height="4dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/circle_dot_shaoe" />
+
+                                <ImageView
+                                    android:layout_width="4dp"
+                                    android:layout_height="4dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="4dp"
+                                    android:src="@drawable/circle_dot_shaoe" />
+
+                                <ImageView
+                                    android:layout_width="4dp"
+                                    android:layout_height="4dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="4dp"
+                                    android:src="@drawable/circle_dot_shaoe" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:padding="6dp"
+                                    android:src="@drawable/circle_drop_shape" />
+
+                                <TextView
+                                    android:id="@+id/txt_drop_accept_reject"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:text="@{viewModels.dropAddr}"
+                                    android:textColor="@color/while_dark"
+                                    android:textSize="@dimen/_12sdp"
+                                    app:textfont="@{`Padauk.ttf`}" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_18sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layoutDirection="ltr">
+
+                <Button
+                    android:id="@+id/btn_accept_acceptreject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:onClick="@{viewModels::onAcceptClicked}"
+                    android:text="@{viewModels.translationModel.text_accept}"
+                    android:textColor="@color/clr_white"
+                    app:Buttonfont="@{`Padauk.ttf`}" /><!--
+                    android:text="@string/text_accept"-->
+
+                <Button
+                    android:id="@+id/btn_reject_acceptreject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/clr_black"
+                    android:onClick="@{viewModels::onRejectClicked}"
+                    android:text="@{viewModels.translationModel.text_reject}"
+                    android:textColor="@color/while_dark"
+                    app:Buttonfont="@{`Padauk.ttf`}" /><!--
+                    android:text="@string/text_reject"-->
+            </LinearLayout>
+        </LinearLayout>
+        <include
+            layout="@layout/progress_dialog"
+            android:visibility="@{viewModels.mIsLoading ? View.VISIBLE : View.GONE}" />
+    </RelativeLayout>
+
+</layout>

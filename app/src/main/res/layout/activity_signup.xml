@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.SignupScreen.SignupViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/signin_toolbar"
+                layout="@layout/toolbar" />
+
+            <!--<android.support.v4.view.ViewPager-->
+            <bz.pei.driver.ui.SignupScreen.CustomViews.SignupViewPager
+                android:id="@+id/pager_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator_pager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="false"
+                        android:defaultFocusHighlightEnabled="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:nestedScrollingEnabled="false"
+                        android:padding="10dip"
+                        app:fillColor="@color/colorPrimaryDark"
+                        app:pageColor="@color/clr_primarylite"
+                        app:strokeColor="@android:color/transparent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:clickable="false"
+                        android:enabled="false"
+                        android:focusableInTouchMode="false" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/curved_border_background_primary"
+                    android:onClick="@{viewModel::OnclickNextBtn}"
+                    android:paddingLeft="@dimen/_40sdp"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:text="@{!viewModel.isLastFragment?@string/text_next:@string/text_submit}"
+                    android:textAllCaps="false"
+                    android:textColor="@color/clr_black"
+                    app:Buttonfont="@{`Padauk.ttf`}" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            layout="@layout/progress_dialog"
+            android:visibility="@{viewModel.mIsLoading ? View.VISIBLE : View.GONE}" />
+    </RelativeLayout>
+</layout>

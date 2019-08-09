@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.DrawerScreen.Dialog.DisplayAddCharge.DisplayChargesViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:id="@+id/layout_title_listcharge"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_8sdp"
+                android:text="@{viewModel.translationModel.txt_Additional_Charge}"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/clr_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/text_add"
+                android:textColor="@color/colorPrimary_click"
+                android:padding="@dimen/_8sdp"
+
+                android:onClick="@{viewModel::onAddAdditionalCharge}"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/layout_title_listcharge"
+            android:id="@+id/recycler_view_list"
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/_100sdp"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+            android:layout_below="@+id/layout_title_listcharge"
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/_100sdp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_no_items"
+                android:visibility="@{!viewModel.isAddChargeAvailable?View.VISIBLE:View.GONE}" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_reject_acceptreject"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/recycler_view_list"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="@{viewModel::closeDialog}"
+            android:text="@{viewModel.translationModel.txt_close}"
+            android:layout_margin="@dimen/_4sdp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/clr_black"
+            app:Buttonfont="@{`Padauk.ttf`}" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="@{viewModel.mIsLoading?View.VISIBLE:View.GONE}"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</layout>

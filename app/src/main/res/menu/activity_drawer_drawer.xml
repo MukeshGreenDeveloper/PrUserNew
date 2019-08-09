@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/txt_Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_user_menu"
+            android:title="@string/text_profile" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_new"
+            android:title="@string/text_title_History" />
+        <item
+            android:id="@+id/nav_manage_doc"
+            android:icon="@drawable/ic_manage_doc"
+            android:title="@string/text_manage_documents" />
+        <item
+            android:id="@+id/nav_complaints"
+            android:icon="@drawable/ic_complaint"
+            android:title="@string/text_complaint" />
+       <item
+            android:id="@+id/nav_sos"
+            android:icon="@drawable/ic_sos"
+            android:title="@string/txt_sos" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/txt_Setting" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/text_share" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_faq"
+            android:title="@string/text_faq" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_support"
+            android:title="@string/txt_support" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_poweroff"
+            android:title="@string/txt_logout" />
+    </group>
+</menu>

@@ -1,0 +1,135 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.Feedback.FeedbackViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/while_dark"
+            android:clickable="true"
+            android:onClick="@{viewModel::hideKeyboard}"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:text="@{viewModel.translationModel.text_feedback}"
+                android:textColor="@color/clr_black"
+                android:textSize="@dimen/_25sdp"
+                app:textfont="@{`Laksaman.ttf`}" />
+
+
+            <LinearLayout
+                android:id="@+id/llout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/white_background"
+                    android:elevation="@dimen/_2sdp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_4sdp"
+                        android:background="@color/clr_orange_drk" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:imageUrlFeedback="@{viewModel.userPic}"
+                        app:srcCompat="@drawable/ic_user" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:text="@{viewModel.userName}"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        app:textfont="@{`Padauk.ttf`}" />
+
+                    <RatingBar
+                        android:id="@+id/rating_user_feedback"
+                        style="@style/customRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:rating="@={viewModel.userReview}" />
+
+                    <EditText
+                        android:id="@+id/edit_comments_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/while_light"
+                        android:gravity="left|start"
+                        android:hint="@{viewModel.translationModel.hint_your_comments}"
+                        android:lines="3"
+                        android:maxLength="120"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@={viewModel.txt_comments}"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        app:textfont="@{`Padauk.ttf`}" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_4sdp"
+                        android:background="@color/clr_orange_drk" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/curved_border_background_primary"
+                android:onClick="@{(v)->viewModel.updateReview(v)}"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:text="@{viewModel.translationModel.text_send}"
+                android:textAllCaps="false"
+                android:textColor="@color/clr_white"
+                app:Buttonfont="@{`Padauk.ttf`}" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/progressBar"
+            layout="@layout/progress_dialog"
+            android:visibility="@{viewModel.mIsLoading ? View.VISIBLE : View.GONE}" />
+    </RelativeLayout>
+</layout>

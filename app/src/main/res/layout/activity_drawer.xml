@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+
+
+            name="viewModel"
+            type="bz.pei.driver.ui.DrawerScreen.DrawerViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:fitsSystemWindows="true"
+            tools:openDrawer="start">
+
+            <!--<include
+                bind:viewModel="@{viewModel}"
+                layout="@layout/app_bar_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+            <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.DrawerScreen.DrawerAct">
+
+
+                <include
+                    android:id="@+id/drawer_toolbar"
+                    layout="@layout/custom_actionbar_layout" />
+
+                <include layout="@layout/content_drawer" />
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                style="@style/Widget.Design.NavigationView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/clr_white"
+                app:itemBackground="@color/clr_white"
+                app:menu="@menu/activity_drawer_drawer">
+
+
+            </android.support.design.widget.NavigationView>
+
+            <!--<android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true"
+                app:menu="@menu/activity_drawer_drawer" />-->
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+        <include
+            android:id="@+id/progressBar"
+            layout="@layout/progress_dialog"
+            android:visibility="@{viewModel.mIsLoading ? View.VISIBLE : View.GONE}" />
+    </FrameLayout>
+</layout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="bz.pei.driver.ui.Login.OtpScreen.OTPViewModel" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/otp_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_background_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/ic_building_bg"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:src="@drawable/ic_sheld" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/otp_relative"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.translationModel.text_please_wait_for_an_otp}"
+                    app:textfont="@{`Laksaman.ttf`}"
+                    android:textColor="@android:color/black"
+                    style="@style/TextViewTheme"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:textSize="@dimen/_22sdp" />
+                <!--
+                            android:text="@string/text_please_wait_for_an_otp"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@{viewModel.translationModel.text_enter_otp_below}"
+                    style="@style/TextViewTheme"
+                    app:textfont="@{`Padauk.ttf`}"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/_16sdp" />
+                <!--
+                            android:text="@string/text_enter_otp_below"-->
+                <bz.pei.driver.ui.Login.OtpScreen.OtpView
+                    android:id="@+id/opt_customview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:layoutDirection="ltr"
+                    android:textColor="@color/clr_black"
+                    android:textSize="@dimen/_22sdp" />
+
+                <Button
+                    android:id="@+id/btn_verify_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:background="@drawable/curved_border_background_primary"
+                    android:paddingLeft="@dimen/_40sdp"
+                    app:Buttonfont="@{`Padauk.ttf`}"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:text="@{viewModel.translationModel.text_verify_otp}"
+                    android:onClick="@{viewModel::onclickverfiy}"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark" />
+                <!--
+                            android:text="@string/text_verify_otp"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:padding="@dimen/_4sdp"
+                    app:textfont="@{`Padauk.ttf`}"
+                    android:onClick="@{viewModel::onclickEditNumber}"
+                    android:text="@{viewModel.translationModel.text_edit_number}"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_14sdp" />
+
+                <!--
+                            android:text="@string/text_edit_number"-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                >
+
+                <TextView
+                    android:id="@+id/timertxt"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    app:textfont="@{`Padauk.ttf`}"
+                    android:text="@{viewModel.translationModel.text_resend}"
+                    android:gravity="center"
+                    android:visibility="@{!viewModel.enableResend?View.VISIBLE:View.GONE}"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_14sdp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    app:textfont="@{`Padauk.ttf`}"
+                    android:text="@{viewModel.translationModel.text_resend}"
+                    android:gravity="center"
+                    android:visibility="@{viewModel.enableResend?View.VISIBLE:View.GONE}"
+                    android:onClick="@{viewModel::onClickResend}"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_14sdp" />
+                <!--
+                                android:text="@string/text_resend"-->
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/progressBar"
+                layout="@layout/progress_dialog"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:visibility="@{viewModel.mIsLoading ? View.VISIBLE : View.GONE}" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>
