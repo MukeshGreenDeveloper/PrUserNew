@@ -715,7 +715,7 @@
                         android:paddingRight="@dimen/_40sdp"
                         android:text="@{viewModel.translationModel.txt_update}"
                         android:textAllCaps="false"
-                        android:textColor="@color/clr_black"
+                        android:textColor="@color/clr_white"
                         app:Buttonfont="@{`Padauk.ttf`}" />
 <!--
                         android:text="@string/txt_update"-->

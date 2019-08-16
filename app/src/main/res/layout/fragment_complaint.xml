@@ -76,6 +76,7 @@
                         android:layout_below="@+id/txt_title_regst_signup"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:gravity="start"
+                        android:theme="@style/ThemeOverlay.AppCompat.Light"
                         app:spinList="@{viewModel.compLaintObservableList}" />
 
                     <LinearLayout

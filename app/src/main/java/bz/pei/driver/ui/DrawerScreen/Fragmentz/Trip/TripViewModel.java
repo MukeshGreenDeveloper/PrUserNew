@@ -762,7 +762,13 @@ public class TripViewModel extends BaseNetwork<RequestModel, TripNavigator> impl
 
     public void openGoogleMap(View view) {
 
-        getmNavigator().openGoogleMap(dropLatlng.get().latitude, dropLatlng.get().longitude);
+        if (isTripStarted.get()) {
+            if (dropLatlng.get() != null && dropLatlng.get().latitude != 0.0 && dropLatlng.get().longitude != 0.0)
+                getmNavigator().openGoogleMap(dropLatlng.get().latitude, dropLatlng.get().longitude);
+        } else {
+            if (pickupLatlng.get() != null && pickupLatlng.get().latitude != 0.0 && pickupLatlng.get().longitude != 0.0)
+                getmNavigator().openGoogleMap(pickupLatlng.get().latitude, pickupLatlng.get().longitude);
+        }
     }
 
     public void setWaitingTime(int time, Integer seconds) {

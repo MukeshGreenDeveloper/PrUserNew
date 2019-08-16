@@ -276,7 +276,7 @@ public class DrawerAct extends BaseActivity<ActivityDrawerBinding, DrawerViewMod
     }
 
     private void openExitDialog() {
-        AlertDialog.Builder builder1 = new android.support.v7.app.AlertDialog.Builder(this);
+        AlertDialog.Builder builder1 = new android.support.v7.app.AlertDialog.Builder(getApplicationContext());
         builder1.setMessage(R.string.text_confirm_exit);
         builder1.setCancelable(true);
         builder1.setPositiveButton(

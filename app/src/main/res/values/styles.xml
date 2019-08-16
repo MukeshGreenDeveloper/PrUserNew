@@ -74,7 +74,7 @@
 
     <style name="MyCheckBox" parent="Theme.AppCompat.Light">
         <item name="colorControlNormal">@color/colorPrimary</item>
-        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/clr_black</item>
     </style>
     <!-- SpeedyTheme Style which simply shows the App Logo. -->
     <style name="SpeedyTheme" parent="Theme.AppCompat.NoActionBar">
