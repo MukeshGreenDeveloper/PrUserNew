@@ -627,34 +627,34 @@
                                     app:textfont="@{`Padauk.ttf`}" />
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_8sdp"
-                                android:paddingLeft="@dimen/_18sdp"
-                                android:visibility="@{viewModelss.enableRoundoff.get()?View.VISIBLE:View.GONE}"
-                                android:paddingRight="@dimen/_18sdp">
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                                <!--android:paddingLeft="@dimen/_18sdp"-->
+                                <!--android:visibility="@{viewModelss.enableRoundoff.get()?View.VISIBLE:View.GONE}"-->
+                                <!--android:paddingRight="@dimen/_18sdp">-->
 
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="@dimen/_3sdp"
-                                    android:layout_marginRight="@dimen/_3sdp"
-                                    android:layout_weight="1"
-                                    android:text="@{viewModelss.translationModel.txt_RoundOff_Charge}"
-                                    android:textAppearance="?android:attr/textAppearanceSmall"
-                                    app:textfont="@{`Padauk.ttf`}" />
+                                <!--<TextView-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginEnd="@dimen/_3sdp"-->
+                                    <!--android:layout_marginRight="@dimen/_3sdp"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:text="@{viewModelss.translationModel.txt_RoundOff_Charge}"-->
+                                    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                                    <!--app:textfont="@{`Padauk.ttf`}" />-->
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="@dimen/_1sdp"
-                                    android:layout_marginRight="@dimen/_1sdp"
-                                    android:hint=""
-                                    android:text="@{viewModelss.txt_roundOffAmount}"
-                                    android:textAppearance="?android:attr/textAppearanceSmall"
-                                    app:textfont="@{`Padauk.ttf`}" />
-                            </LinearLayout>
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginEnd="@dimen/_1sdp"-->
+                                    <!--android:layout_marginRight="@dimen/_1sdp"-->
+                                    <!--android:hint=""-->
+                                    <!--android:text="@{viewModelss.txt_roundOffAmount}"-->
+                                    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                                    <!--app:textfont="@{`Padauk.ttf`}" />-->
+                            <!--</LinearLayout>-->
 
                             <LinearLayout
                                 android:layout_width="match_parent"

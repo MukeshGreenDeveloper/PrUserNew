@@ -375,39 +375,39 @@
                                         app:textfont="@{`Padauk.ttf`}" />
                                 </LinearLayout>
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal"
-                                    android:paddingLeft="@dimen/_18sdp"
-                                    android:paddingRight="@dimen/_18sdp"
-                                    android:visibility="@{viewModel.enableRoundoff?View.VISIBLE:View.GONE}"
-                                    android:weightSum="10">
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:orientation="horizontal"-->
+                                    <!--android:paddingLeft="@dimen/_18sdp"-->
+                                    <!--android:paddingRight="@dimen/_18sdp"-->
+                                    <!--android:visibility="@{viewModel.enableRoundoff?View.VISIBLE:View.GONE}"-->
+                                    <!--android:weightSum="10">-->
 
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="7"
+                                    <!--<TextView-->
+                                        <!--android:layout_width="0dp"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_weight="7"-->
 
-                                        android:text="@{viewModel.translationModel.txt_RoundOff_Charge}"
-                                        android:textColor="@color/clr_green"
-                                        android:textSize="@dimen/_12sdp"
-                                        android:textStyle="bold"
-                                        app:textfont="@{`Padauk.ttf`}" />
+                                        <!--android:text="@{viewModel.translationModel.txt_RoundOff_Charge}"-->
+                                        <!--android:textColor="@color/clr_green"-->
+                                        <!--android:textSize="@dimen/_12sdp"-->
+                                        <!--android:textStyle="bold"-->
+                                        <!--app:textfont="@{`Padauk.ttf`}" />-->
 
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="3"
-                                        android:gravity="end"
-                                        android:text="@{viewModel.roundOffAmount}"
-                                        android:textColor="@color/clr_green"
-                                        android:textSize="@dimen/_12sdp"
-                                        android:textStyle="bold"
-                                        app:textfont="@{`Padauk.ttf`}" />
+                                    <!--<TextView-->
+                                        <!--android:layout_width="0dp"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_weight="3"-->
+                                        <!--android:gravity="end"-->
+                                        <!--android:text="@{viewModel.roundOffAmount}"-->
+                                        <!--android:textColor="@color/clr_green"-->
+                                        <!--android:textSize="@dimen/_12sdp"-->
+                                        <!--android:textStyle="bold"-->
+                                        <!--app:textfont="@{`Padauk.ttf`}" />-->
 
 
-                                </LinearLayout>
+                                <!--</LinearLayout>-->
 
                                 <LinearLayout
                                     android:layout_width="match_parent"

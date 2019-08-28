@@ -90,10 +90,9 @@ public final class Constants {
         String FORBIDDEN = "Seems like you haven't permitted to do this operation!";
     }
 
-
     public interface URL {
         /*Live*/
-        String BaseURL = BuildConfig.BASE_URL+"/peitaxi/public/";
+        String BaseURL = BuildConfig.BASE_URL+"/production/peitaxi/public/";
         String SOCKET_URL = BuildConfig.SOCKET_URL+":3001/driver/home";
         String TERMSANDCONDITIONS ="https://pei.bz/terms.html";
         String GooglBaseURL = "https://maps.googleapis.com/";
