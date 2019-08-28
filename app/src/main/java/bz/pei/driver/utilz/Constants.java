@@ -25,10 +25,10 @@ public final class Constants {
             android.Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
     public static int SPLASH_TIME_OUT = 3000;
-//    public static String SERVER_API_KEY = "AIzaSyCUfJ9kApwANNFun1zMuzJoJ0h4FZa6FBg";
-    public static String SERVER_API_KEY = "AIzaSyD6IThzCJ-lHoFjq94zv3CXMuHw_PBFn9I";
+//    public static String SERVER_API_KEY = "AIzaSyD6IThzCJ-lHoFjq94zv3CXMuHw_PBFn9I";
+    public static String SERVER_API_KEY = "AIzaSyCutNBjAvKMdqlPw8VFr_u_d7amic0LU40";
 
-    public static String COUNTRY_CODE = "US";
+    public static String COUNTRY_CODE = "AE";
     public static final int REQUEST_PERMISSION = 9000;
     public static final int SELECT_FILE = 100;
     public static final int REQUEST_CAMERA = 200;
@@ -270,7 +270,6 @@ public final class Constants {
         String LNG = "lng";
         String OLD_PASSWORD = "old_password";
         String NEW_PASSWORD = "new_password";
-
 
         String PLATITUDE = "platitude";
         String PLONGITUDE = "plongitude";
