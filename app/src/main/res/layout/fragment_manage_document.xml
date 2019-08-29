@@ -290,7 +290,7 @@
             android:onClick="@{viewModel::onConfirmToHome}"
             android:text="@{viewModel.translationModel.text_ok}"
             android:textAllCaps="true"
-            android:textColor="@color/clr_black"
+            android:textColor="@color/clr_white"
             android:textStyle="bold"
             android:visibility="@{viewModel.showOkButton?View.VISIBLE:View.GONE}"
             app:Buttonfont="@{`Padauk.ttf`}" />

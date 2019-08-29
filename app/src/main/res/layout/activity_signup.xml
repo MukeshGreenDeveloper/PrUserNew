@@ -76,7 +76,7 @@
                     android:paddingRight="@dimen/_40sdp"
                     android:text="@{!viewModel.isLastFragment?@string/text_next:@string/text_submit}"
                     android:textAllCaps="false"
-                    android:textColor="@color/clr_black"
+                    android:textColor="@color/clr_white"
                     app:Buttonfont="@{`Padauk.ttf`}" />
             </LinearLayout>
         </LinearLayout>
