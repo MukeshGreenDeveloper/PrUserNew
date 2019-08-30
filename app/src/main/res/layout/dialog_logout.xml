@@ -91,7 +91,7 @@
                     android:textAllCaps="true"
                     android:background="@color/colorPrimary"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="@color/clr_black"
+                    android:textColor="@color/buttonTextColor"
                     app:textfont="@{`Padauk.ttf`}" />
             </LinearLayout>
         </LinearLayout>

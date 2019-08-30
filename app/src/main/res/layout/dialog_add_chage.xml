@@ -89,7 +89,7 @@
                     android:onClick="@{viewModel::onAddAdditionalCharge}"
                     android:text="@{viewModel.translationModel.txt_Apply}"
                     android:enabled="@{!viewModel.mIsLoading}"
-                    android:textColor="@color/clr_black"
+                    android:textColor="@color/clr_white"
                     app:Buttonfont="@{`Padauk.ttf`}" />
 
                 <Space

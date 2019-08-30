@@ -166,12 +166,12 @@ public class HistoryViewModel extends BaseNetwork<RequestModel, HistoryNavigator
                 enableWaiting.set(bill.waiting_price!=null &&bill.waiting_price>0);
                 txt_waitingCost.set(CommonUtils.doubleDecimalFromat(bill.waiting_price));
 
-                txt_walletAmount.set(currency + " " + ((model.request.payment_opt == Constants.WALLET || model.request.payment_opt == Constants.WALLET_CASH) ? bill.wallet_amount : bill.total));
+                txt_walletAmount.set(currency + " " +CommonUtils.doubleDecimalFromat ((model.request.payment_opt == Constants.WALLET || model.request.payment_opt == Constants.WALLET_CASH) ? bill.wallet_amount : bill.total));
 
                 enableRoundoff.set(bill.round_up_minimum_price!=null &&bill.round_up_minimum_price>0);
                 txt_roundOffAmount.set((bill.round_up_minimum_price != null ? doubleDecimalFromat(bill.round_up_minimum_price) : "0.00"));
                 totalAdditionalCharge.set(doubleDecimalFromat(bill.totalAdditionalCharge));
-                txt_total.set(currency + " " + bill.total);
+                txt_total.set(currency + " " +CommonUtils.doubleDecimalFromat(bill.total));
                 showBill.set(bill.show_bill == 1);
                 showBill.set(model.request.is_cancelled == 0);
                 txt_paymentMode.set(context.getString(

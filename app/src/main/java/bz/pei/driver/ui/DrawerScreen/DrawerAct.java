@@ -276,7 +276,7 @@ public class DrawerAct extends BaseActivity<ActivityDrawerBinding, DrawerViewMod
     }
 
     private void openExitDialog() {
-        AlertDialog.Builder builder1 = new android.support.v7.app.AlertDialog.Builder(getApplicationContext());
+        AlertDialog.Builder builder1 = new android.support.v7.app.AlertDialog.Builder(this);
         builder1.setMessage(R.string.text_confirm_exit);
         builder1.setCancelable(true);
         builder1.setPositiveButton(
@@ -387,8 +387,6 @@ public class DrawerAct extends BaseActivity<ActivityDrawerBinding, DrawerViewMod
                     showFaqFragment();
                 } else if (id == R.id.nav_logout) {
                     showLogoutDialog();
-                } else if (id == R.id.nav_support) {
-                    openSupportFragment();
                 }
             }
         }, 200);
@@ -563,7 +561,6 @@ public class DrawerAct extends BaseActivity<ActivityDrawerBinding, DrawerViewMod
             activityDrawerBinding.navView.getMenu().findItem(R.id.nav_settings).setTitle(getString(R.string.txt_Setting));
             activityDrawerBinding.navView.getMenu().findItem(R.id.nav_share).setTitle(getString(R.string.text_share));
             activityDrawerBinding.navView.getMenu().findItem(R.id.nav_faq).setTitle(getString(R.string.text_faq));
-            activityDrawerBinding.navView.getMenu().findItem(R.id.nav_support).setTitle(getString(R.string.txt_support));
             activityDrawerBinding.navView.getMenu().findItem(R.id.nav_logout).setTitle(getString(R.string.txt_logout));
         }
         showMapFragment();
