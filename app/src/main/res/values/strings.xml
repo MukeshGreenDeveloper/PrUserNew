@@ -12,7 +12,7 @@
     <string name="text_Japanese" translatable="false">Japanese</string>
     <string name="text_Korean" translatable="false">Korean</string>
     <string name="text_Portugese" translatable="false">Portugese</string>
-    <string name="Map_key" translatable="false">AIzaSyBHYELwGcRWFknEdeAfBu6-DPjL-UdPCNY</string>
+    <string name="Map_key" translatable="false">qbcd</string>
     <string name="PlaceApi_key" translatable="false"> </string>
     <string name="default_notification_channel_id" translatable="false">1029589359310</string>
     <string name="cancel_notification_channel_id" translatable="false">1029589359310</string>

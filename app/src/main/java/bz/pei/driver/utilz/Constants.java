@@ -25,8 +25,7 @@ public final class Constants {
             android.Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
     public static int SPLASH_TIME_OUT = 3000;
-//    public static String SERVER_API_KEY = "AIzaSyD6IThzCJ-lHoFjq94zv3CXMuHw_PBFn9I";
-    public static String SERVER_API_KEY = "AIzaSyCutNBjAvKMdqlPw8VFr_u_d7amic0LU40";
+    public static String SERVER_API_KEY = "abcd";
 
     public static String COUNTRY_CODE = "AE";
     public static final int REQUEST_PERMISSION = 9000;
@@ -92,7 +91,7 @@ public final class Constants {
 
     public interface URL {
         /*Live*/
-        String BaseURL = BuildConfig.BASE_URL+"/peitaxi/public/";
+        String BaseURL = BuildConfig.BASE_URL+"/t/public/";
         String SOCKET_URL = BuildConfig.SOCKET_URL+":3001/driver/home";
         String TERMSANDCONDITIONS ="https://pei.bz/terms.html";
         String GooglBaseURL = "https://maps.googleapis.com/";

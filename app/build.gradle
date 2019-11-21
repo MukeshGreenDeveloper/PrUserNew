@@ -17,10 +17,10 @@ android {
     compileSdkVersion 29
     signingConfigs {
         ReleaseConfig {
-            keyAlias 'peidriver'
-            keyPassword 'peidriver'
-            storeFile file('../KeyStore/peidriver.jks')
-            storePassword 'peidriver'
+            keyAlias 'test'
+            keyPassword 'testdriver'
+            storeFile file('../KeyStore/testdriver.jks')
+            storePassword 'testdriver'
         }
     }
     defaultConfig {
@@ -60,12 +60,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField 'String', 'BASE_URL', '"http://3.14.252.169"'
-            buildConfigField 'String', 'SOCKET_URL', '"http://3.14.252.169"'
+            buildConfigField 'String', 'BASE_URL', '"http://google.com"'
+            buildConfigField 'String', 'SOCKET_URL', '"http://google.com"'
         }
         debug {
-            buildConfigField 'String', 'BASE_URL', '"http://3.14.252.169"'
-            buildConfigField 'String', 'SOCKET_URL', '"http://3.14.252.169"'
+            buildConfigField 'String', 'BASE_URL', '"http://google.com"'
+            buildConfigField 'String', 'SOCKET_URL', '"http://google.com"'
         }
     }
     lintOptions {
