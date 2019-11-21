@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Dialog.RideListDialog.RideListViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.dialog.ridelistdialog.RideListViewModel" />
     </data>
 
     <RelativeLayout

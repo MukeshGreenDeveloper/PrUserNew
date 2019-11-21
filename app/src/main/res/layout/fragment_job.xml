@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.Trip.TripViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.trip.TripViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

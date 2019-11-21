@@ -17,20 +17,20 @@
 package bz.pei.driver.Di.Builder;
 
 
-import bz.pei.driver.ui.AcceptReject.AcceptRejectActivity;
-import bz.pei.driver.ui.DrawerScreen.DrawerAct;
-import bz.pei.driver.ui.DrawerScreen.Fragmentz.DialogFragmentProvider;
-import bz.pei.driver.ui.DrawerScreen.Fragmentz.MapFragmentProvider;
-import bz.pei.driver.ui.Forgot.ForgetPwdActivity;
-import bz.pei.driver.ui.History.HistoryActivity;
-import bz.pei.driver.ui.Login.LoginActivity;
-import bz.pei.driver.ui.Login.LoginViaOTP.LoginOTPActivity;
-import bz.pei.driver.ui.Login.OtpScreen.OTPActivity;
-import bz.pei.driver.ui.Login.OtpScreen.OtpDaggerModel;
-import bz.pei.driver.ui.Main.MainActivity;
-import bz.pei.driver.ui.SignupScreen.Fragmentz.SignupFragmentProvider;
-import bz.pei.driver.ui.SignupScreen.SignupActivity;
-import bz.pei.driver.ui.Splash.SplashActivity;
+import bz.pei.driver.ui.acceptreject.AcceptRejectActivity;
+import bz.pei.driver.ui.drawerscreen.DrawerAct;
+import bz.pei.driver.ui.drawerscreen.fragmentz.DialogFragmentProvider;
+import bz.pei.driver.ui.drawerscreen.fragmentz.MapFragmentProvider;
+import bz.pei.driver.ui.forgot.ForgetPwdActivity;
+import bz.pei.driver.ui.history.HistoryActivity;
+import bz.pei.driver.ui.login.LoginActivity;
+import bz.pei.driver.ui.login.loginviaotp.LoginOTPActivity;
+import bz.pei.driver.ui.login.otpscreen.OTPActivity;
+import bz.pei.driver.ui.login.otpscreen.OtpDaggerModel;
+import bz.pei.driver.ui.main.MainActivity;
+import bz.pei.driver.ui.signupscreen.fragmentz.SignupFragmentProvider;
+import bz.pei.driver.ui.signupscreen.SignupActivity;
+import bz.pei.driver.ui.splash.SplashActivity;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;

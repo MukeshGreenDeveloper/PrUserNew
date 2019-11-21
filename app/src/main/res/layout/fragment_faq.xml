@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.Faq.FaqFragmentViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.faq.FaqFragmentViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

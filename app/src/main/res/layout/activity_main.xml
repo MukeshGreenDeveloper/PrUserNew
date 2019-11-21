@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.Main.MainViewModel" />
+            type="bz.pei.driver.ui.main.MainViewModel" />
     </data>
     <RelativeLayout
         android:layout_width="match_parent"

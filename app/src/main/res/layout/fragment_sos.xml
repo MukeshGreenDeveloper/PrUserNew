@@ -5,7 +5,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.Sos.SOSViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.sos.SOSViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

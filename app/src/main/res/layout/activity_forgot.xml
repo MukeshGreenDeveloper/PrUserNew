@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.Forgot.ForgotViewModel" />
+            type="bz.pei.driver.ui.forgot.ForgotViewModel" />
 
     </data>
 

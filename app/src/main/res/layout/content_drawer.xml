@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/Container"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="bz.pei.driver.ui.DrawerScreen.DrawerAct"
+    tools:context="bz.pei.driver.ui.drawerscreen.DrawerAct"
     tools:showIn="@layout/activity_drawer">
 
 

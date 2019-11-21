@@ -18,7 +18,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import bz.pei.driver.ui.DrawerScreen.Fragmentz.MapFragmentViewModel;
+import bz.pei.driver.ui.drawerscreen.fragmentz.MapFragmentViewModel;
 
 public class BackgroundLocationUpdateService extends IntentService implements GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,

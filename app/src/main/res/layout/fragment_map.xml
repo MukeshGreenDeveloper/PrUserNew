@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.MapFragmentViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.MapFragmentViewModel" />
 
         <import type="android.view.View" />
 
@@ -16,7 +16,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="bz.pei.driver.ui.DrawerScreen.Fragmentz.MapFragment">
+        tools:context="bz.pei.driver.ui.drawerscreen.fragmentz.MapFragment">
 
         <RelativeLayout
             android:layout_width="match_parent"

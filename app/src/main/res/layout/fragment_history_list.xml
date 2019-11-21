@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.HistoryLIst.HistoryListViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.historylist.HistoryListViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

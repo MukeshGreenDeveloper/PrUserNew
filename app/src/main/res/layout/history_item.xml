@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.HistoryLIst.adapter.childHistoryViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.historylist.adapter.ChildHistoryViewModel" />
 
     </data>
 

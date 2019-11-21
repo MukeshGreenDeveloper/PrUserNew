@@ -9,10 +9,10 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import bz.pei.driver.Retro.GitHubCountryCode;
-import bz.pei.driver.Retro.GitHubMapService;
-import bz.pei.driver.Retro.GitHubService;
-import bz.pei.driver.Retro.dynamicInterceptor;
+import bz.pei.driver.retro.GitHubCountryCode;
+import bz.pei.driver.retro.GitHubMapService;
+import bz.pei.driver.retro.GitHubService;
+import bz.pei.driver.retro.dynamicInterceptor;
 import bz.pei.driver.utilz.Constants;
 
 import java.io.IOException;

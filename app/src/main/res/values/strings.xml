@@ -224,4 +224,6 @@
     <string name="text_power_saver_title">Power Saver mode is ON</string>
     <string name="text_power_saver_enable_desc">disable power saver mode else it might be difficult to get rides.</string>
     <string name="service_desc">Accessibilities</string>
+    <string name="action_settings">Settings</string>
+    <string name="Txt_Forgot">Settings</string>
 </resources>

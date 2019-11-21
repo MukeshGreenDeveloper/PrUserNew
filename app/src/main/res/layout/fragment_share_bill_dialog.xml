@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Dialog.ShareBillDialog.ShareBillDialogViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.dialog.sharebilldialog.ShareBillDialogViewModel" />
     </data>
 
     <RelativeLayout
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:background="@color/while_dark"
             android:orientation="vertical"
-            tools:context=".ui.DrawerScreen.Dialog.ShareBillDialog.ShareBillDialogFragment">
+            tools:context=".ui.drawerscreen.dialog.sharebilldialog.ShareBillDialogFragment">
 
 
             <ImageView

@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Adapter.AddChrargeAdapViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.adapter.AddChrargeAdapViewModel" />
     </data>
 
     <LinearLayout

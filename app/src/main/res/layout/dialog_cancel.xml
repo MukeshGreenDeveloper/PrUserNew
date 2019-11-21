@@ -7,7 +7,7 @@
 
         <variable
             name="viewModelss"
-            type="bz.pei.driver.ui.DrawerScreen.Dialog.CancelDialog.CancelDialogViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.dialog.canceldialog.CancelDialogViewModel" />
     </data>
 
     <!--

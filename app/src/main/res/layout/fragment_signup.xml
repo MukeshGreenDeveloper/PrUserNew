@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.SignupScreen.Fragmentz.SignupFragmentViewModel" />
+            type="bz.pei.driver.ui.signupscreen.fragmentz.SignupFragmentViewModel" />
 
     </data>
 
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/clr_white"
-        tools:context=".ui.SignupScreen.Fragmentz.SignupFragment">
+        tools:context=".ui.signupscreen.fragmentz.SignupFragment">
 
         <LinearLayout
             android:layout_width="match_parent"

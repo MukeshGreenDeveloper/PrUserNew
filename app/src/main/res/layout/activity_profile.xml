@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.Profile.ProfileViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.profile.ProfileViewModel" />
 
     </data>
 

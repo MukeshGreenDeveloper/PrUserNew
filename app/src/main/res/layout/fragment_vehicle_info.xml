@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.SignupScreen.Fragmentz.VehicleInfoViewModel" />
+            type="bz.pei.driver.ui.signupscreen.fragmentz.VehicleInfoViewModel" />
     </data>
 
     <RelativeLayout

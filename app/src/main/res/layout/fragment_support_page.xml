@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.SupportPage.SupportFragViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.supportpage.SupportFragViewModel" />
 
     </data>
 

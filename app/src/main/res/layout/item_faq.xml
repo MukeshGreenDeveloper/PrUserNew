@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.Retro.ResponseModel.FAQModel" />
+            type="bz.pei.driver.retro.responsemodel.FAQModel" />
 
     </data>
 

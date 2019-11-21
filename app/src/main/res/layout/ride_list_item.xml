@@ -10,7 +10,7 @@
 
             <variable
                 name="viewModel"
-                type="bz.pei.driver.ui.DrawerScreen.Dialog.RideListDialog.adapter.ChildRideListViewModel" />
+                type="bz.pei.driver.ui.drawerscreen.dialog.ridelistdialog.adapter.ChildRideListViewModel" />
 
         </data>
 

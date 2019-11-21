@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.SignupScreen.Fragmentz.DocDialogViewModel" />
+            type="bz.pei.driver.ui.signupscreen.fragmentz.DocDialogViewModel" />
     </data>
 
     <LinearLayout

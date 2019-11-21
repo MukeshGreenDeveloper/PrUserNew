@@ -9,7 +9,7 @@
 
 
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.DrawerViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.DrawerViewModel" />
     </data>
 
     <FrameLayout
@@ -35,7 +35,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context=".ui.DrawerScreen.DrawerAct">
+                tools:context=".ui.drawerscreen.DrawerAct">
 
 
                 <include

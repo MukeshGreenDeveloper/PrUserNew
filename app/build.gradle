@@ -27,8 +27,8 @@ android {
         applicationId "bz.pei.driver"
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 2
-        versionName "1.1"
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -66,17 +66,7 @@ android {
         debug {
             buildConfigField 'String', 'BASE_URL', '"http://3.14.252.169"'
             buildConfigField 'String', 'SOCKET_URL', '"http://3.14.252.169"'
-        }/*
-        production {
-            buildConfigField 'String', 'BASE_URL', '"http://192.168.1.25"'
-            buildConfigField 'String', 'SOCKET_URL', '"http://192.168.1.25"'
-            signingConfig signingConfigs.ReleaseConfig
         }
-        development {
-            buildConfigField 'String', 'BASE_URL', '"http://192.168.1.25"'
-            buildConfigField 'String', 'SOCKET_URL', '"http://192.168.1.25"'
-            signingConfig signingConfigs.ReleaseConfig
-        }*/
     }
     lintOptions {
         checkReleaseBuilds false
@@ -87,12 +77,11 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':countrylist')
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //Crashlytics
-    api('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+    implementation('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
         transitive = true;
     }
     // dependency injection
@@ -112,7 +101,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:11.0.0'
     implementation 'com.google.firebase:firebase-messaging:11.0.0'
     implementation "com.github.bumptech.glide:glide:$rootProject.glideversion"
-    api('io.socket:socket.io-client:1.0.0') {//0.8.3') {
+    implementation('io.socket:socket.io-client:1.0.0') {//0.8.3') {
         exclude group: 'org.json', module: 'json'
     }
     implementation 'com.android.support:cardview-v7:27.0.2'

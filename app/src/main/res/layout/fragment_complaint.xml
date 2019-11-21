@@ -5,7 +5,7 @@
         <import type="android.view.View" />
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.complaintone.ComplaintFragmentViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.complaints.ComplaintFragmentViewModel" />
     </data>
 
     <RelativeLayout

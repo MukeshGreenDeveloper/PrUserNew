@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.MultipleShareRide.MultipleShareRideViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.multipleshareride.MultipleShareRideViewModel" />
 
         <import type="android.view.View" />
     </data>

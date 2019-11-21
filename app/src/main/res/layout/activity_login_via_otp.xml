@@ -9,7 +9,7 @@
         <variable
 
             name="viewModel"
-            type="bz.pei.driver.ui.Login.LoginViaOTP.LoginOTPViewModel" />
+            type="bz.pei.driver.ui.login.loginviaotp.LoginOTPViewModel" />
 
     </data>
 
@@ -82,8 +82,7 @@
                             android:id="@+id/signupFlag"
                             android:layout_width="wrap_content"
 
-                            android:layout_height="match_parent"
-                            android:background="@drawable/edit_box_drop_selector" />
+                            android:layout_height="match_parent" />
 
                         <EditText
                             android:id="@+id/edit_country_code_signup"

@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.Login.OtpScreen.OTPViewModel" />
+            type="bz.pei.driver.ui.login.otpscreen.OTPViewModel" />
 
     </data>
 
@@ -75,7 +75,7 @@
                     android:textSize="@dimen/_16sdp" />
                 <!--
                             android:text="@string/text_enter_otp_below"-->
-                <bz.pei.driver.ui.Login.OtpScreen.OtpView
+                <bz.pei.driver.ui.login.otpscreen.OtpView
                     android:id="@+id/opt_customview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

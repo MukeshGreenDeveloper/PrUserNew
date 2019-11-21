@@ -14,9 +14,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <uses-feature
-        android:name="android.hardware.telephony"
-        android:required="false" />
-    <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
     <uses-feature
@@ -156,12 +153,12 @@
         </service>
 
         <activity
-            android:name="bz.pei.driver.ui.AcceptReject.AcceptRejectActivity"
+            android:name="bz.pei.driver.ui.acceptreject.AcceptRejectActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleInstance"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="bz.pei.driver.ui.SignupScreen.TermsandCons"
+            android:name="bz.pei.driver.ui.signupscreen.TermsandCons"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <!--
@@ -171,41 +168,41 @@
                     android:windowSoftInputMode="stateAlwaysHidden"/>
         -->
         <activity
-            android:name="bz.pei.driver.ui.Splash.SplashActivity"
+            android:name="bz.pei.driver.ui.splash.SplashActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
-            android:name="bz.pei.driver.ui.Main.MainActivity"
+            android:name="bz.pei.driver.ui.main.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="bz.pei.driver.ui.SignupScreen.SignupActivity"
+            android:name="bz.pei.driver.ui.signupscreen.SignupActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="bz.pei.driver.ui.Login.LoginActivity"
+            android:name="bz.pei.driver.ui.login.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="bz.pei.driver.ui.DrawerScreen.DrawerAct"
+            android:name="bz.pei.driver.ui.drawerscreen.DrawerAct"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="bz.pei.driver.ui.History.HistoryActivity"
+            android:name="bz.pei.driver.ui.history.HistoryActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="bz.pei.driver.ui.Forgot.ForgetPwdActivity"
+            android:name="bz.pei.driver.ui.forgot.ForgetPwdActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="bz.pei.driver.ui.Login.LoginViaOTP.LoginOTPActivity"
+            android:name="bz.pei.driver.ui.login.loginviaotp.LoginOTPActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="bz.pei.driver.ui.Login.OtpScreen.OTPActivity"
+            android:name="bz.pei.driver.ui.login.otpscreen.OTPActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
@@ -223,7 +220,7 @@
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/ic_launcher" />
+            android:resource="@mipmap/ic_launcher" />
         <!--
              Set color used with incoming notification messages. This is used when no color is set for the incoming
              notification message. See README(https://goo.gl/6BKBk7) for more.
@@ -273,7 +270,7 @@
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <activity android:name="bz.pei.driver.ui.Splash.SplashScreen"
+        <activity android:name="bz.pei.driver.ui.splash.SplashScreen"
             android:theme="@style/SpeedyBrandTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Dialog.DisplayAddCharge.DisplayChargesViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.dialog.displayaddcharge.DisplayChargesViewModel" />
     </data>
 
     <RelativeLayout

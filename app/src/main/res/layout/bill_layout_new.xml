@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Dialog.BillDialog.BillDialogViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.dialog.billdialog.BillDialogViewModel" />
     </data>
 
     <RelativeLayout

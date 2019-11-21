@@ -1,13 +1,13 @@
 package bz.pei.driver.utilz;
 
-import bz.pei.driver.ui.DrawerScreen.Dialog.AcceptRejectDialog.AcceptRejectDialogViweModel;
-import bz.pei.driver.ui.DrawerScreen.Fragmentz.Feedback.FeedbackViewModel;
-import bz.pei.driver.ui.DrawerScreen.Fragmentz.Setting.SettingsViewModel;
-import bz.pei.driver.ui.DrawerScreen.Fragmentz.ShareTrip.ShareTripViewModel;
-import bz.pei.driver.ui.DrawerScreen.Fragmentz.Sos.SOSViewModel;
-import bz.pei.driver.ui.DrawerScreen.Fragmentz.Trip.TripViewModel;
-import bz.pei.driver.ui.DrawerScreen.Fragmentz.complaintone.ComplaintFragmentViewModel;
-import bz.pei.driver.ui.History.HistoryViewModel;
+import bz.pei.driver.ui.drawerscreen.dialog.acceptrejectdialog.AcceptRejectDialogViweModel;
+import bz.pei.driver.ui.drawerscreen.fragmentz.feedback.FeedbackViewModel;
+import bz.pei.driver.ui.drawerscreen.fragmentz.setting.SettingsViewModel;
+import bz.pei.driver.ui.drawerscreen.fragmentz.sharetrip.ShareTripViewModel;
+import bz.pei.driver.ui.drawerscreen.fragmentz.sos.SOSViewModel;
+import bz.pei.driver.ui.drawerscreen.fragmentz.trip.TripViewModel;
+import bz.pei.driver.ui.drawerscreen.fragmentz.complaints.ComplaintFragmentViewModel;
+import bz.pei.driver.ui.history.HistoryViewModel;
 
 /**
  * Created by root on 12/29/17.

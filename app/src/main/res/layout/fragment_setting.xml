@@ -4,7 +4,7 @@
         <import type="android.view.View"/>
        <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.Setting.SettingsViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.setting.SettingsViewModel" />
     </data>
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:background="@color/while_dark"
         android:clickable="true"
-        tools:context="bz.pei.driver.ui.DrawerScreen.Fragmentz.Setting.SettingFragment">
+        tools:context="bz.pei.driver.ui.drawerscreen.fragmentz.setting.SettingFragment">
 
         <LinearLayout
             android:layout_width="match_parent"

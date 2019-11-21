@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.Splash.SplashViewModel" />
+            type="bz.pei.driver.ui.splash.SplashViewModel" />
     </data>
 
     <RelativeLayout

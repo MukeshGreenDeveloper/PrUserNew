@@ -9,7 +9,7 @@
 
         <variable
             name="viewModels"
-            type="bz.pei.driver.ui.DrawerScreen.Dialog.AcceptRejectDialog.AcceptRejectDialogViweModel" />
+            type="bz.pei.driver.ui.drawerscreen.dialog.acceptrejectdialog.AcceptRejectDialogViweModel" />
     </data>
 
     <RelativeLayout

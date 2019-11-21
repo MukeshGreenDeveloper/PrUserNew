@@ -9,7 +9,7 @@
         <variable
 
             name="viewModel"
-            type="bz.pei.driver.ui.SignupScreen.Fragmentz.DocUploadViewModel" />
+            type="bz.pei.driver.ui.signupscreen.fragmentz.DocUploadViewModel" />
 
     </data>
 

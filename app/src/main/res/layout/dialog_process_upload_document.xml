@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Dialog.ProcessDocumentUpload.ProcessDocUploadDialogViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.dialog.processdocumentupload.ProcessDocUploadDialogViewModel" />
     </data>
 <RelativeLayout
     android:layout_width="wrap_content"

@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.SignupScreen.SignupViewModel" />
+            type="bz.pei.driver.ui.signupscreen.SignupViewModel" />
     </data>
 
     <RelativeLayout
@@ -25,7 +25,7 @@
                 layout="@layout/toolbar" />
 
             <!--<android.support.v4.view.ViewPager-->
-            <bz.pei.driver.ui.SignupScreen.CustomViews.SignupViewPager
+            <bz.pei.driver.ui.signupscreen.customviews.SignupViewPager
                 android:id="@+id/pager_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

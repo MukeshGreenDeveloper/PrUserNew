@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="bz.pei.driver.ui.DrawerScreen.Fragmentz.ShareTrip.ShareTripViewModel" />
+            type="bz.pei.driver.ui.drawerscreen.fragmentz.sharetrip.ShareTripViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
