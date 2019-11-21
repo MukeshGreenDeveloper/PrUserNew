@@ -1,8 +1,8 @@
 package bz.pei.driver.ui.drawerscreen;
 
 import android.content.Context;
-import android.databinding.BindingAdapter;
-import android.databinding.ObservableField;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.ObservableField;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.ImageView;
@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.google.gson.Gson;
-import bz.pei.driver.App.MyApp;
-import bz.pei.driver.FCM.MyFirebaseMessagingService;
+import bz.pei.driver.app.MyApp;
+import bz.pei.driver.fcm.MyFirebaseMessagingService;
 import bz.pei.driver.R;
 import bz.pei.driver.retro.base.BaseNetwork;
 import bz.pei.driver.retro.GitHubCountryCode;

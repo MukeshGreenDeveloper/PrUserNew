@@ -1,4 +1,4 @@
-package bz.pei.driver.Pojos;
+package bz.pei.driver.pojos;
 
 import bz.pei.driver.ui.signupscreen.fragmentz.adapter.VehiclePagerAdapter;
 

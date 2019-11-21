@@ -13,8 +13,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import bz.pei.driver.App.MyApp;
-import bz.pei.driver.FCM.MyFirebaseMessagingService;
+import bz.pei.driver.app.MyApp;
+import bz.pei.driver.fcm.MyFirebaseMessagingService;
 import bz.pei.driver.R;
 import bz.pei.driver.utilz.CommonUtils;
 import bz.pei.driver.utilz.Constants;

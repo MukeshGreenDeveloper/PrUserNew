@@ -1,6 +1,6 @@
 package bz.pei.driver.ui.splash;
 
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableField;
 
 import com.google.gson.Gson;
 import bz.pei.driver.BuildConfig;

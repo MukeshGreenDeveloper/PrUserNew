@@ -1,4 +1,4 @@
-package bz.pei.driver.Di.Scope;
+package bz.pei.driver.di.scope;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

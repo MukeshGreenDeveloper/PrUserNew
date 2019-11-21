@@ -1,6 +1,6 @@
 package bz.pei.driver.ui.drawerscreen.fragmentz.historylist;
 
-import android.databinding.ObservableBoolean;
+import androidx.databinding.ObservableBoolean;
 
 import bz.pei.driver.R;
 import bz.pei.driver.retro.base.BaseNetwork;

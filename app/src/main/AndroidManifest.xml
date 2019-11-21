@@ -61,7 +61,7 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name="bz.pei.driver.App.MyApp"
+        android:name="bz.pei.driver.app.MyApp"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -207,12 +207,12 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
-        <service android:name="bz.pei.driver.FCM.MyFirebaseMessagingService">
+        <service android:name="bz.pei.driver.fcm.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="bz.pei.driver.FCM.MyFirebaseInstanceIDService">
+        <service android:name="bz.pei.driver.fcm.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>

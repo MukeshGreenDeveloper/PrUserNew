@@ -38,9 +38,9 @@ import android.os.Looper;
 import android.os.PowerManager;
 import android.os.SystemClock;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.annotation.NonNull;
+import androidx.core.app.NotificationCompat;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -52,8 +52,8 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.gson.Gson;
-import bz.pei.driver.App.MyApp;
-import bz.pei.driver.FCM.MyFirebaseMessagingService;
+import bz.pei.driver.app.MyApp;
+import bz.pei.driver.fcm.MyFirebaseMessagingService;
 import bz.pei.driver.R;
 import bz.pei.driver.retro.GitHubService;
 import bz.pei.driver.retro.responsemodel.RequestModel;
@@ -90,7 +90,7 @@ import retrofit2.Callback;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static android.support.v4.app.NotificationCompat.PRIORITY_MIN;
+import static androidx.core.app.NotificationCompat.PRIORITY_MIN;
 
 /**
  * A bound and started service that is promoted to a foreground service when location updates have

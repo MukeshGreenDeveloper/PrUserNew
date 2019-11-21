@@ -1,6 +1,6 @@
 package bz.pei.driver.ui.drawerscreen.fragmentz;
 
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.gms.location.LocationRequest;
 import com.google.gson.Gson;

@@ -1,9 +1,9 @@
 package bz.pei.driver.ui.acceptreject;
 
 import android.content.Context;
-import android.databinding.BindingAdapter;
-import android.databinding.ObservableField;
-import android.databinding.ObservableInt;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.ObservableField;
+import androidx.databinding.ObservableInt;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.text.TextUtils;

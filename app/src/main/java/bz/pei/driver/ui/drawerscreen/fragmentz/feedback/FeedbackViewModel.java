@@ -1,10 +1,10 @@
 package bz.pei.driver.ui.drawerscreen.fragmentz.feedback;
 
 import android.content.Context;
-import android.databinding.BindingAdapter;
-import android.databinding.DataBindingUtil;
-import android.databinding.ObservableField;
-import android.databinding.ObservableInt;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ObservableField;
+import androidx.databinding.ObservableInt;
 import android.view.View;
 import android.widget.ImageView;
 

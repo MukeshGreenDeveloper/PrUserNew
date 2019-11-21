@@ -7,7 +7,7 @@ import android.os.Build;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
-import bz.pei.driver.App.MyApp;
+import bz.pei.driver.app.MyApp;
 
 import java.util.Locale;
 

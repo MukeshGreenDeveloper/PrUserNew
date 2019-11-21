@@ -2,7 +2,7 @@
 
     <data>
 
-        <import type="android.support.v4.app.Fragment" />
+        <import type="androidx.fragment.app.Fragment" />
 
         <variable
             name="viewModel"
@@ -105,7 +105,7 @@
                                 app:Editfont="@{`Padauk.ttf`}" />
                             <!--
                                                             android:hint="@string/text_firstname"-->
-                            <android.support.v4.widget.Space
+                            <androidx.legacy.widget.Space
                                 android:layout_width="5dp"
                                 android:layout_height="match_parent" />
 
@@ -254,7 +254,7 @@
                                 app:textfont="@{`Laksaman.ttf`}" />
                         </LinearLayout>
 
-                        <android.support.v4.widget.Space
+                        <androidx.legacy.widget.Space
                             android:layout_width="wrap_content"
                             android:layout_height="15dp" />
 

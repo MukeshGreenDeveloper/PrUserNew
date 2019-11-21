@@ -1,11 +1,11 @@
 package bz.pei.driver.ui.drawerscreen.dialog.sharebilldialog;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.View;
 
-import com.android.databinding.library.baseAdapters.BR;
+import androidx.databinding.library.baseAdapters.BR;
 import bz.pei.driver.R;
 import bz.pei.driver.retro.responsemodel.RequestModel;
 import bz.pei.driver.databinding.FragmentShareBillDialogBinding;

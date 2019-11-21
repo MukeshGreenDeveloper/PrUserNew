@@ -2,11 +2,11 @@ package bz.pei.driver.ui.drawerscreen.fragmentz.historylist;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.View;
 
-import com.android.databinding.library.baseAdapters.BR;
+import androidx.databinding.library.baseAdapters.BR;
 import bz.pei.driver.R;
 import bz.pei.driver.retro.responsemodel.HistoryModel;
 import bz.pei.driver.databinding.FragmentHistoryListBinding;

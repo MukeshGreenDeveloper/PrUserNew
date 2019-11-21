@@ -38,12 +38,12 @@
                 android:onClick="@{viewModel::onAddAdditionalCharge}"
                 android:layout_height="wrap_content" />
         </LinearLayout>
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_below="@+id/layout_title_listcharge"
             android:id="@+id/recycler_view_list"
             android:layout_width="match_parent"
             android:minHeight="@dimen/_100sdp"
-            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
         <RelativeLayout
             android:layout_below="@+id/layout_title_listcharge"
             android:layout_width="match_parent"

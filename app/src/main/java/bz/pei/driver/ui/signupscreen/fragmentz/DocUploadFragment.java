@@ -8,20 +8,20 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.databinding.DataBindingUtil;
-import android.databinding.ObservableField;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ObservableField;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.fragment.app.Fragment;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
 import android.widget.DatePicker;
 
 import bz.pei.driver.BR;
-import bz.pei.driver.Pojos.RegisterationModel;
+import bz.pei.driver.pojos.RegisterationModel;
 import bz.pei.driver.R;
 import bz.pei.driver.databinding.DialogDocumentUploadBinding;
 import bz.pei.driver.databinding.FragmentDocuploadBinding;
@@ -36,7 +36,7 @@ import java.util.Date;
 
 import javax.inject.Inject;
 
-/*import com.android.databinding.library.baseAdapters.BR;*/
+/*import androidx.databinding.library.baseAdapters.BR;*/
 
 /**
  * A simple {@link Fragment} subclass.

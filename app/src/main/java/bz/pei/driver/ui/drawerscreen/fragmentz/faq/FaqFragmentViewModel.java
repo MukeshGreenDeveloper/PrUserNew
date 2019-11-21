@@ -1,6 +1,6 @@
 package bz.pei.driver.ui.drawerscreen.fragmentz.faq;
 
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 
 import com.google.gson.Gson;
 import bz.pei.driver.R;

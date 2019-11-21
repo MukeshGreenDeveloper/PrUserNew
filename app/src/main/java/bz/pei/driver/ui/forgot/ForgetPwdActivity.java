@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
-import com.android.databinding.library.baseAdapters.BR;
+import androidx.databinding.library.baseAdapters.BR;
 
 import javax.inject.Inject;
 

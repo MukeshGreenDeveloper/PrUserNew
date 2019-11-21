@@ -1,7 +1,7 @@
 package bz.pei.driver.ui.drawerscreen.fragmentz.feedback;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 
 import bz.pei.driver.BR;

@@ -2,14 +2,14 @@ package bz.pei.driver.ui.signupscreen.fragmentz;
 
 import android.content.Context;
 import android.content.Intent;
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableField;
 import android.graphics.Bitmap;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import bz.pei.driver.Pojos.RegisterationModel;
+import bz.pei.driver.pojos.RegisterationModel;
 import bz.pei.driver.R;
 import bz.pei.driver.retro.base.BaseNetwork;
 import bz.pei.driver.retro.GitHubService;

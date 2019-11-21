@@ -1,4 +1,4 @@
-package bz.pei.driver.FCM;
+package bz.pei.driver.fcm;
 
 import android.preference.PreferenceManager;
 import android.util.Log;

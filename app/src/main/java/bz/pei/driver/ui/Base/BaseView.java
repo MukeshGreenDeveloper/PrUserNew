@@ -1,6 +1,6 @@
 package bz.pei.driver.ui.Base;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import bz.pei.driver.utilz.Exception.CustomException;

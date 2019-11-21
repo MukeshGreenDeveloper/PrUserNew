@@ -46,7 +46,7 @@ ext {
     roomDatabase = '1.0.0-alpha3'
     rx2FastAndroidNetworking = '1.0.0'
 
-    dagger2Version = '2.11'
+    dagger2Version = '2.16'
     rxjava2Version = '2.0.6'
     rxandroidVersion = '2.0.1'
     placeholderviewVersion = '0.6.1'

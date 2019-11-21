@@ -13,7 +13,7 @@ import bz.pei.driver.ui.history.HistoryViewModel;
  * Created by root on 12/29/17.
  */
 
-public class MyDataComponent<T> implements android.databinding.DataBindingComponent {
+public class MyDataComponent<T> implements androidx.databinding.DataBindingComponent {
     private T instance;
 
     public MyDataComponent(T instance) {

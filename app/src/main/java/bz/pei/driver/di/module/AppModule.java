@@ -1,4 +1,4 @@
-package bz.pei.driver.Di.Module;
+package bz.pei.driver.di.module;
 
 import android.app.Application;
 import android.content.Context;

@@ -42,7 +42,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/lyt_header_v1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -94,7 +94,7 @@
 
 
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>
@@ -119,7 +119,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <!--android:visibility="@{viewModel.isTripStarted?View.GONE:View.VISIBLE}"-->
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -169,13 +169,13 @@
                                 android:layout_centerVertical="true"
                                 android:src="@drawable/ic_plus" />-->
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v4.widget.Space
+                    <androidx.legacy.widget.Space
                         android:layout_width="@dimen/_4sdp"
                         android:layout_height="wrap_content" />
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -196,13 +196,13 @@
                             android:textSize="@dimen/_10sdp"
                             app:Buttonfont="@{`Padauk.ttf`}" /><!--
                             android:text="@string/text_call"-->
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v4.widget.Space
+                    <androidx.legacy.widget.Space
                         android:layout_width="@dimen/_4sdp"
                         android:layout_height="wrap_content" />
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -224,11 +224,11 @@
                             android:textSize="@dimen/_10sdp"
                             app:Buttonfont="@{`Padauk.ttf`}" /><!--
                             android:text="@string/text_call"-->
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </LinearLayout>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/lyt_head"
@@ -382,7 +382,7 @@
                     </LinearLayout>
 
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <RelativeLayout
                 android:layout_width="match_parent"

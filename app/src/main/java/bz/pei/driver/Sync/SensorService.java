@@ -10,18 +10,19 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.IBinder;
 import android.os.PowerManager;
-import android.support.v4.app.NotificationCompat;
+
+import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
 import android.util.Log;
 
-import bz.pei.driver.FCM.MyFirebaseMessagingService;
+import bz.pei.driver.fcm.MyFirebaseMessagingService;
 import bz.pei.driver.R;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-import javax.annotation.Nullable;
 
-import static android.support.v4.app.NotificationCompat.PRIORITY_MIN;
+import static androidx.core.app.NotificationCompat.PRIORITY_MIN;
 
 public class SensorService extends Service {
 

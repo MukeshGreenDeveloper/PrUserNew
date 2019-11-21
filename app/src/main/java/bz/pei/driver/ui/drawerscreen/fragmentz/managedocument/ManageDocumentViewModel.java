@@ -1,8 +1,8 @@
 package bz.pei.driver.ui.drawerscreen.fragmentz.managedocument;
 
 import android.content.Context;
-import android.databinding.DataBindingUtil;
-import android.databinding.ObservableBoolean;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ObservableBoolean;
 import android.text.TextUtils;
 import android.view.View;
 

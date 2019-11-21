@@ -3,7 +3,7 @@ package bz.pei.driver.ui.drawerscreen.fragmentz.multipleshareride;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
+import androidx.core.app.ActivityCompat;
 import android.view.View;
 
 import com.google.android.gms.maps.GoogleMap;

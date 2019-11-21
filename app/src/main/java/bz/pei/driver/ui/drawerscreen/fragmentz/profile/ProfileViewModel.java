@@ -2,9 +2,9 @@ package bz.pei.driver.ui.drawerscreen.fragmentz.profile;
 
 import android.content.Context;
 import android.content.Intent;
-import android.databinding.BindingAdapter;
-import android.databinding.ObservableBoolean;
-import android.databinding.ObservableField;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.ObservableBoolean;
+import androidx.databinding.ObservableField;
 import android.graphics.Bitmap;
 import android.text.TextUtils;
 import android.view.View;

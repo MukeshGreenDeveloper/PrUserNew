@@ -1,6 +1,6 @@
 package bz.pei.driver.ui.login.otpscreen;
 
-import android.databinding.ObservableBoolean;
+import androidx.databinding.ObservableBoolean;
 import android.text.TextUtils;
 import android.view.View;
 

@@ -1,6 +1,6 @@
 package bz.pei.driver.ui.drawerscreen.fragmentz.sos.adapter;
 
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableField;
 
 /**
  * Created by root on 12/12/17.

@@ -14,7 +14,7 @@
  *  limitations under the License
  */
 
-package bz.pei.driver.Di.Builder;
+package bz.pei.driver.di.builder;
 
 
 import bz.pei.driver.ui.acceptreject.AcceptRejectActivity;

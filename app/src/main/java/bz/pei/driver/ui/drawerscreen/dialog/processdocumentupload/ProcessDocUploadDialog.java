@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.View;
 import android.widget.DatePicker;
 
@@ -27,7 +27,7 @@ import javax.inject.Inject;
 import static bz.pei.driver.utilz.Constants.Array_permissions;
 import static bz.pei.driver.utilz.Constants.REQUEST_PERMISSION;
 
-/*import com.android.databinding.library.baseAdapters.BR;*/
+/*import androidx.databinding.library.baseAdapters.BR;*/
 
 /**
  * A simple {@link Fragment} subclass.

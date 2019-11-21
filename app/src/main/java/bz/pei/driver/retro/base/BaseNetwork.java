@@ -1,8 +1,8 @@
 package bz.pei.driver.retro.base;
 
 import android.content.Context;
-import android.databinding.BindingAdapter;
-import android.databinding.ObservableBoolean;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.ObservableBoolean;
 import android.graphics.Typeface;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;

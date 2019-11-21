@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.widget.TextView;
 
-import com.android.databinding.library.baseAdapters.BR;
-import bz.pei.driver.App.MyApp;
+import androidx.databinding.library.baseAdapters.BR;
+import bz.pei.driver.app.MyApp;
 import bz.pei.driver.R;
 import bz.pei.driver.databinding.ActivityOtpBinding;
 import bz.pei.driver.ui.Base.BaseActivity;

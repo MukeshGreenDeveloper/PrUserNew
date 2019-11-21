@@ -2,7 +2,7 @@ package bz.pei.driver.ui.signupscreen.fragmentz;
 
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 
 import bz.pei.driver.retro.responsemodel.VehicleTypeModel;
 import bz.pei.driver.ui.Base.BaseView;

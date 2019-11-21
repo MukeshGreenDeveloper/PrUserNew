@@ -7,7 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.Uri;
@@ -17,14 +17,14 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.provider.Settings;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.navigation.NavigationView;
+import androidx.fragment.app.Fragment;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.MenuItem;
@@ -32,7 +32,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import bz.pei.driver.App.MyApp;
+import bz.pei.driver.app.MyApp;
 import bz.pei.driver.BR;
 import bz.pei.driver.R;
 import bz.pei.driver.retro.responsemodel.RequestModel;
@@ -276,7 +276,7 @@ public class DrawerAct extends BaseActivity<ActivityDrawerBinding, DrawerViewMod
     }
 
     private void openExitDialog() {
-        AlertDialog.Builder builder1 = new android.support.v7.app.AlertDialog.Builder(this);
+        AlertDialog.Builder builder1 = new androidx.appcompat.app.AlertDialog.Builder(this);
         builder1.setMessage(R.string.text_confirm_exit);
         builder1.setCancelable(true);
         builder1.setPositiveButton(
@@ -293,7 +293,7 @@ public class DrawerAct extends BaseActivity<ActivityDrawerBinding, DrawerViewMod
                         dialog.dismiss();
                     }
                 });
-        android.support.v7.app.AlertDialog alert11 = builder1.create();
+        androidx.appcompat.app.AlertDialog alert11 = builder1.create();
         alert11.show();
     }
 

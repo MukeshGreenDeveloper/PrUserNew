@@ -14,13 +14,13 @@
  *  limitations under the License
  */
 
-package bz.pei.driver.Di.Component;
+package bz.pei.driver.di.component;
 
 import android.app.Application;
 
-import bz.pei.driver.App.MyApp;
-import bz.pei.driver.Di.Builder.ActivityBuilder;
-import bz.pei.driver.Di.Module.AppModule;
+import bz.pei.driver.app.MyApp;
+import bz.pei.driver.di.builder.ActivityBuilder;
+import bz.pei.driver.di.module.AppModule;
 
 import javax.inject.Singleton;
 

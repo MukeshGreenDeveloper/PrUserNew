@@ -1,10 +1,10 @@
 package bz.pei.driver.ui.drawerscreen.dialog.canceldialog;
 
 import android.content.Context;
-import android.databinding.BindingAdapter;
-import android.databinding.ObservableArrayList;
-import android.databinding.ObservableBoolean;
-import android.databinding.ObservableField;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.ObservableArrayList;
+import androidx.databinding.ObservableBoolean;
+import androidx.databinding.ObservableField;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;

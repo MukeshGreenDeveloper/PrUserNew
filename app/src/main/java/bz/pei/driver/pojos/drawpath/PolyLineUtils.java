@@ -1,4 +1,4 @@
-package bz.pei.driver.Pojos.DrawPath;
+package bz.pei.driver.pojos.drawpath;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

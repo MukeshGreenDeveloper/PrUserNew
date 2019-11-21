@@ -1,7 +1,7 @@
 package bz.pei.driver.ui.drawerscreen.dialog.displayaddcharge;
 
-import android.databinding.ObservableBoolean;
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableBoolean;
+import androidx.databinding.ObservableField;
 import android.view.View;
 
 import com.google.gson.Gson;

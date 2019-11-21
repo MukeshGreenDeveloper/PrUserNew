@@ -1,4 +1,4 @@
-package bz.pei.driver.FCM;
+package bz.pei.driver.fcm;
 
 import android.app.ActivityManager;
 import android.app.NotificationChannel;
@@ -12,14 +12,14 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.TaskStackBuilder;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.TaskStackBuilder;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import bz.pei.driver.App.MyApp;
+import bz.pei.driver.app.MyApp;
 import bz.pei.driver.R;
 import bz.pei.driver.retro.responsemodel.RequestModel;
 import bz.pei.driver.ui.acceptreject.AcceptRejectActivity;

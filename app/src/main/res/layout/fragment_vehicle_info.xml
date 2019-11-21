@@ -85,13 +85,13 @@
                         android:layout_marginRight="@dimen/_15sdp"
                         android:gravity="center_vertical">
 
-                        <android.support.v4.view.ViewPager
+                        <androidx.viewpager.widget.ViewPager
                             android:id="@+id/pager_vehicle_signup"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_110sdp"
                             android:onPageChangeListener="@{viewModel}">
 
-                        </android.support.v4.view.ViewPager>
+                        </androidx.viewpager.widget.ViewPager>
                         <!--<include layout="@layout/item_vehicletype" />-->
 
                         <ImageView
@@ -141,7 +141,7 @@
                             app:Editfont="@{`Padauk.ttf`}" />
 <!--
                             android:hint="@string/hint_vehicle_number"-->
-                        <android.support.v4.widget.Space
+                        <androidx.legacy.widget.Space
                             android:layout_width="5dp"
                             android:layout_height="match_parent" />
 
@@ -180,7 +180,7 @@
                             app:Editfont="@{`Padauk.ttf`}" />
 <!--
                             android:hint="@string/hint_vehicle_number"-->
-                        <android.support.v4.widget.Space
+                        <androidx.legacy.widget.Space
                             android:layout_width="5dp"
                             android:layout_height="match_parent" />
 

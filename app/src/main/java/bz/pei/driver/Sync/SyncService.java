@@ -7,7 +7,7 @@ import android.os.Build;
 import android.os.IBinder;
 import android.util.Log;
 
-import bz.pei.driver.App.MyApp;
+import bz.pei.driver.app.MyApp;
 import bz.pei.driver.utilz.CommonUtils;
 import bz.pei.driver.utilz.Location.LocationUpdatesService;
 

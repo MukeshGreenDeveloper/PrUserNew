@@ -16,7 +16,7 @@
 
 package bz.pei.driver.ui.Base;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 /**

@@ -1,4 +1,4 @@
-package bz.pei.driver.App;
+package bz.pei.driver.app;
 
 import android.app.Activity;
 import android.app.Application;
@@ -6,12 +6,12 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.multidex.MultiDex;
+import androidx.multidex.MultiDex;
 import android.util.Log;
 
 import com.crashlytics.android.Crashlytics;
 import com.google.gson.Gson;
-import bz.pei.driver.Di.Component.DaggerAppComponent;
+import bz.pei.driver.di.component.DaggerAppComponent;
 import bz.pei.driver.retro.base.BaseResponse;
 import bz.pei.driver.retro.GitHubService;
 import bz.pei.driver.Sync.SyncUtils;

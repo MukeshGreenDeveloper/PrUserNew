@@ -1,7 +1,7 @@
 package bz.pei.driver.ui.drawerscreen.dialog.billdialog;
 
 import android.content.Context;
-import android.databinding.ObservableBoolean;
+import androidx.databinding.ObservableBoolean;
 import android.view.View;
 
 import com.google.gson.Gson;

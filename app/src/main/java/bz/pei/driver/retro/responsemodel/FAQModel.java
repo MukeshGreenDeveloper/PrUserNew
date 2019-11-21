@@ -1,7 +1,7 @@
 package bz.pei.driver.retro.responsemodel;
 
-import android.databinding.BindingAdapter;
-import android.databinding.ObservableBoolean;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.ObservableBoolean;
 import android.graphics.Typeface;
 import android.view.View;
 import android.widget.TextView;

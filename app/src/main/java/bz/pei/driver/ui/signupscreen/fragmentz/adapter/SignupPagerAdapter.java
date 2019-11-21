@@ -1,8 +1,8 @@
 package bz.pei.driver.ui.signupscreen.fragmentz.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import bz.pei.driver.ui.signupscreen.fragmentz.SignupFragment;
 import bz.pei.driver.ui.signupscreen.fragmentz.VehicleInfoFragment;

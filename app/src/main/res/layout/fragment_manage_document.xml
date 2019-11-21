@@ -21,7 +21,7 @@
             android:clickable="true"
             android:orientation="vertical">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_15sdp"
@@ -56,9 +56,9 @@
                     <!--
                         android:src="@{viewModel.licenseUploaded?@drawable/ic_tick :@drawable/ic_plus}"-->
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_15sdp"
@@ -93,9 +93,9 @@
                     <!--
                         android:src="@{viewModel.is_licenceOK?@drawable/ic_tick :@drawable/ic_plus}"-->
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_15sdp"
@@ -130,9 +130,9 @@
                     <!--
                         android:src="@{viewModel.is_licenceOK?@drawable/ic_tick :@drawable/ic_plus}"-->
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_15sdp"
@@ -167,9 +167,9 @@
                     <!--
                         android:src="@{viewModel.is_licenceOK?@drawable/ic_tick :@drawable/ic_plus}"-->
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_15sdp"
@@ -204,9 +204,9 @@
                     <!--
                         android:src="@{viewModel.is_licenceOK?@drawable/ic_tick :@drawable/ic_plus}"-->
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_15sdp"
@@ -241,9 +241,9 @@
                     <!--
                         android:src="@{viewModel.is_licenceOK?@drawable/ic_tick :@drawable/ic_plus}"-->
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_15sdp"
@@ -278,7 +278,7 @@
                     <!--
                         android:src="@{viewModel.is_licenceOK?@drawable/ic_tick :@drawable/ic_plus}"-->
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
         <Button

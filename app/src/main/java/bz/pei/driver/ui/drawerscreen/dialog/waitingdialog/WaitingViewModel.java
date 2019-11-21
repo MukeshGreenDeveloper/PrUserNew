@@ -1,6 +1,6 @@
 package bz.pei.driver.ui.drawerscreen.dialog.waitingdialog;
 
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableField;
 import android.os.Handler;
 import android.os.SystemClock;
 import android.view.View;

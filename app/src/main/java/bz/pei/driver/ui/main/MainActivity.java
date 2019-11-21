@@ -2,10 +2,10 @@ package bz.pei.driver.ui.main;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import bz.pei.driver.BR;
-import bz.pei.driver.Pojos.RegisterationModel;
+import bz.pei.driver.pojos.RegisterationModel;
 import bz.pei.driver.R;
 import bz.pei.driver.databinding.ActivityMainBinding;
 import bz.pei.driver.ui.Base.BaseActivity;

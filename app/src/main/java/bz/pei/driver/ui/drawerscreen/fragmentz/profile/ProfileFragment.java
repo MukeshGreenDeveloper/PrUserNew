@@ -76,7 +76,7 @@ public class ProfileFragment extends BaseFragment<ActivityProfileBinding, Profil
 
     @Override
     public void alertSelectCameraGalary() {
-        android.support.v7.app.AlertDialog.Builder builder1 = new android.support.v7.app.AlertDialog.Builder(getBaseActivity());
+        androidx.appcompat.app.AlertDialog.Builder builder1 = new androidx.appcompat.app.AlertDialog.Builder(getBaseActivity());
         builder1.setMessage("ChooseOne");
         builder1.setCancelable(true);
 
@@ -98,7 +98,7 @@ public class ProfileFragment extends BaseFragment<ActivityProfileBinding, Profil
                     }
                 });
 
-        android.support.v7.app.AlertDialog alert11 = builder1.create();
+        androidx.appcompat.app.AlertDialog alert11 = builder1.create();
         alert11.show();
     }
 

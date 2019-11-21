@@ -10,9 +10,9 @@ import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AlertDialog;
+import androidx.fragment.app.Fragment;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.appcompat.app.AlertDialog;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.CheckBox;
@@ -33,7 +33,7 @@ import bz.pei.driver.utilz.SharedPrefence;
 import static bz.pei.driver.utilz.Constants.Array_permissions;
 import static bz.pei.driver.utilz.Constants.REQUEST_PERMISSION;
 
-/*import com.android.databinding.library.baseAdapters.BR;*/
+/*import androidx.databinding.library.baseAdapters.BR;*/
 
 /**
  * A simple {@link Fragment} subclass.

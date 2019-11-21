@@ -1,7 +1,7 @@
 package bz.pei.driver.ui.signupscreen.fragmentz;
 
 import android.content.Context;
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableField;
 
 import bz.pei.driver.ui.Base.BaseView;
 

@@ -1,8 +1,8 @@
 package bz.pei.driver.utilz;
 
 import android.content.Context;
-import android.databinding.BindingAdapter;
-import android.databinding.ObservableField;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.ObservableField;
 import android.graphics.Typeface;
 import android.widget.Button;
 import android.widget.EditText;
