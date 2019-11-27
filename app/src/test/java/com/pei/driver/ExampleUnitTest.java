@@ -1,4 +1,4 @@
-package bz.pei.driver;
+package com.pei.driver;
 
 import org.junit.Test;
 

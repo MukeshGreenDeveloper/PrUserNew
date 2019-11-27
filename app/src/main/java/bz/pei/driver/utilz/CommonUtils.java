@@ -30,6 +30,8 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.AssetManager;
+
+import androidx.annotation.RequiresApi;
 import androidx.databinding.BindingAdapter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -517,6 +519,7 @@ public final class CommonUtils {
         return bitmap;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static Bitmap getBitmap(Context context, int drawableId) {
         Drawable drawable = ContextCompat.getDrawable(context, drawableId);
         if (drawable instanceof BitmapDrawable) {
@@ -531,6 +534,7 @@ public final class CommonUtils {
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static Bitmap getBitmapFromDrawable(Context context, @DrawableRes int drawableId) {
 //        Drawable drawable = ContextCompat.getDrawable(context, drawableId);
         Drawable drawable;

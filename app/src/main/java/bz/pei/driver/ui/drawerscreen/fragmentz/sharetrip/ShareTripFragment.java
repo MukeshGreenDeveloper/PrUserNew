@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+
 import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -87,7 +89,9 @@ public class ShareTripFragment extends BaseFragment<FragmentShareTripBinding, Sh
                     binding.footerTripfragment.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 } else {
                     binding.headerTripfragment.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                    binding.footerTripfragment.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                        binding.footerTripfragment.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    }
                 }
 
                 System.out.println("+FRBottomlayout+" + binding.headerTripfragment.getMeasuredHeight());
@@ -239,6 +243,7 @@ public class ShareTripFragment extends BaseFragment<FragmentShareTripBinding, Sh
         fragment.setTargetFragment(this, TRIP_WAIT_CODE);
         fragment.show(getBaseActivity().getSupportFragmentManager(), WaitingDialogFragment.TAG);
     }
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public BitmapDescriptor getMarkerIcon(int drawID) {
         return BitmapDescriptorFactory.fromBitmap(CommonUtils.getBitmapFromDrawable(getActivity(), drawID));

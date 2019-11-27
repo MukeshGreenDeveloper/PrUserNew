@@ -1,7 +1,10 @@
 package bz.pei.driver.ui.history;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
+
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -116,6 +119,7 @@ public class HistoryActivity extends BaseActivity<ActivityHistoryBinding, Histor
         return getApplicationContext();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public BitmapDescriptor getMarkerIcon(int drawID) {
         return BitmapDescriptorFactory.fromBitmap(CommonUtils.getBitmapFromDrawable(HistoryActivity.this, drawID));

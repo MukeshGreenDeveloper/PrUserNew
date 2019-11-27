@@ -5,7 +5,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 
 /**
  * Created by kartikeykushwaha on 18/12/16.
- * @see https://github.com/krtkush/LinearTimer
+ * https://github.com/krtkush/LinearTimer
  */
 public class LinearTimer implements ArcProgressAnimation.TimerListener {
 

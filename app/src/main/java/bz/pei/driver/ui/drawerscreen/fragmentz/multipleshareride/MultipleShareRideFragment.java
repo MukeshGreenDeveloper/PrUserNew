@@ -2,7 +2,10 @@ package bz.pei.driver.ui.drawerscreen.fragmentz.multipleshareride;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+
+import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import android.view.View;
 
@@ -160,6 +163,7 @@ public class MultipleShareRideFragment extends BaseFragment<FragmentMultipleShar
         viewModel.startLocationUpdate();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public BitmapDescriptor getMarkerIcon(int drawID) {
         return BitmapDescriptorFactory.fromBitmap(CommonUtils.getBitmapFromDrawable(getActivity(), drawID));

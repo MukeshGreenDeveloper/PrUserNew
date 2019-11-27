@@ -25,6 +25,8 @@ public final class Constants {
             android.Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
     public static int SPLASH_TIME_OUT = 3000;
+    public static String WAKE_LOCK_TAG = "myapp:PIE_WAKE_LOCK_TAG";
+    public static String WAKE_LOCK_TAG2 = "myapp:PIE_WAKE_LOCK_TAG2";
     public static String SERVER_API_KEY = "abcd";
 
     public static String COUNTRY_CODE = "AE";

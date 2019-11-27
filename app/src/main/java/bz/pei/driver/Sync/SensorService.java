@@ -17,6 +17,7 @@ import android.util.Log;
 
 import bz.pei.driver.fcm.MyFirebaseMessagingService;
 import bz.pei.driver.R;
+import bz.pei.driver.utilz.Constants;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -51,9 +52,9 @@ public class SensorService extends Service {
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         boolean isScreenOn = pm.isScreenOn();
         if (isScreenOn == false) {
-            PowerManager.WakeLock wl = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP | PowerManager.ON_AFTER_RELEASE, "MyLock");
+            PowerManager.WakeLock wl = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP | PowerManager.ON_AFTER_RELEASE, Constants.WAKE_LOCK_TAG);
             wl.acquire(10000);
-            PowerManager.WakeLock wl_cpu = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "MyCpuLock");
+            PowerManager.WakeLock wl_cpu = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, Constants.WAKE_LOCK_TAG2);
             wl_cpu.acquire(10000);
         }
     }

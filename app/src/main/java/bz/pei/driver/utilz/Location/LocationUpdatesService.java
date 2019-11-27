@@ -337,16 +337,6 @@ public class LocationUpdatesService extends Service {
             initiateSocket();
     }
 
-    private void wakupScreen() {
-        PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-        boolean isScreenOn = pm.isScreenOn();
-        if (isScreenOn == false) {
-            PowerManager.WakeLock wl = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP | PowerManager.ON_AFTER_RELEASE, "MyLock");
-            wl.acquire(10000);
-            PowerManager.WakeLock wl_cpu = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "MyCpuLock");
-            wl_cpu.acquire(10000);
-        }
-    }
 
     /**
      * Removes location updates. Note that in this sample we merely log the

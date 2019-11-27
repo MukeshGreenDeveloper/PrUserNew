@@ -8,6 +8,8 @@ import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -88,7 +90,9 @@ public class TripFragment extends BaseFragment<FragmentJobBinding, TripViewModel
                     binding.footerTripfragment.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 } else {
                     binding.headerTripfragment.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                    binding.footerTripfragment.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                        binding.footerTripfragment.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    }
                 }
 
                 System.out.println("+FRBottomlayout+" + binding.headerTripfragment.getMeasuredHeight());
@@ -239,6 +243,7 @@ public class TripFragment extends BaseFragment<FragmentJobBinding, TripViewModel
         fragment.setTargetFragment(this, TRIP_WAIT_CODE);
         fragment.show(getBaseActivity().getSupportFragmentManager(), WaitingDialogFragment.TAG);
     }
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public BitmapDescriptor getMarkerIcon(int drawID) {
         return BitmapDescriptorFactory.fromBitmap(CommonUtils.getBitmapFromDrawable(getActivity(), drawID));
