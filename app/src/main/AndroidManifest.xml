@@ -200,7 +200,13 @@
             android:name="bz.pei.driver.ui.login.loginviaotp.LoginOTPActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="bz.pei.driver.ui.login.otpscreen.OTPActivity"
             android:launchMode="singleInstance"
@@ -271,13 +277,7 @@
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity android:name="bz.pei.driver.ui.splash.SplashScreen"
-            android:theme="@style/SpeedyBrandTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/SpeedyBrandTheme"></activity>
     </application>
 
 </manifest>

@@ -115,14 +115,6 @@
                             android:layoutDirection="ltr"
                             android:maxLength="30"
                             app:Editfont="@{`Padauk.ttf`}" />
-                        <!--
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            app:srcCompat="@drawable/ic_right_arrow_white"
-                            android:padding="@dimen/_8sdp"
-                            android:background="@color/colorPrimary"
-                            android:onClick="@{viewModel.onClickLogin}"
-                            android:layout_height="@dimen/_30sdp" />-->
 
 
                     </LinearLayout>
