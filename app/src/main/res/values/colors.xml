@@ -6,13 +6,8 @@
     <color name="colorPrimaryDark">#ffffff</color>
     <color name="colorAccent">#040707</color>
     <color name="colorAccentLite">#505656</color>
-    <color name="btn_bg_dark">#384957</color>
-    <color name="btn_bg_light">#7b7b7b</color>
-    <color name="colorPrimaryAlternate">#FFFF3939</color>
-    <color name="colorPrimaryAlternate_light">#ff6d6d</color>
     <color name="colorPrimaryDark_click">#4F94D0</color>
     <color name="colorPrimary_click">#445454</color>
-    <color name="textc">#FFFF3939</color>
     <color name="clr_gray">#384957</color>
     <color name="buttonTextColor">#ffffff</color>
 
@@ -33,13 +28,10 @@
     <color name="color_red">#e93838</color>
     <color name="color_green">#17c200</color>
     <color name="color_app_gray">#999999</color>
-    <color name="txt_clr">#FFFF3939</color>
     <color name="clr_green">#17A049</color>
     <!--Feedback-->
 
 
-    <color name="bg_clr_orange">#89fab3</color>
-    <color name="bg_clr_orange_dark">#5d5e5e</color>
     <color name="clr_orange_drk">#040707</color>
     <color name="bg_clr_bill_orange">#989f9f</color>
     <!--<color name="bg_clr_orange">#ffcaab</color>-->
