@@ -886,10 +886,10 @@ public abstract class BaseActivity<T extends ViewDataBinding, V> extends AppComp
     }
 
 
-    @Override
-    public Resources getResources() {
-        return new CustomResources(sharedPrefence, getAssets(), super.getResources().getDisplayMetrics(), super.getResources().getConfiguration());
-    }
+//    @Override
+//    public Resources getResources() {
+//        return new CustomResources(sharedPrefence, getAssets(), super.getResources().getDisplayMetrics(), super.getResources().getConfiguration());
+//    }
 
     public static boolean isAppIsInBackground(Context context) {
         boolean isInBackground = true;
